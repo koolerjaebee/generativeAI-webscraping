@@ -1,0 +1,3546 @@
+<!DOCTYPE html>
+<html class="page-searchresults" id="doc" lang="en">
+ <head id="Head1">
+  <!-- charset must appear in the first 1024 bytes of the document -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <script>
+   var SCM = SCM || {};
+      if (SCM.AMA && SCM.AMA.DataLayerAsync) {
+        SCM.AMA.DataLayerAsync.push("arrSisAffinity", "", "array");
+        SCM.AMA.DataLayerAsync.push("SubStatus", "no", "string");
+      }
+
+      var googletag = window.googletag || {};
+      googletag.cmd = googletag.cmd || [];
+
+          
+          if (typeof Storage !== "undefined")
+          {
+              var targetingParamStr = localStorage.getItem("bcDFPTargetingParams");
+              if (targetingParamStr)
+              {
+                  var targetingParameters = JSON.parse(targetingParamStr);     // set page-level targeting parameters
+                  jQuery.each(targetingParameters, function (index, param) {
+                      googletag.cmd.push(function () {
+                          window.googletag.pubads().setTargeting(param.key, param.value);
+                      });
+                  });
+              }
+          }
+          
+      if (!googletag.pubads) {
+        (function () {
+          var gads = document.createElement('script');
+          var useSSL = 'https:' == document.location.protocol;
+          gads.src = (useSSL ? 'https:' : 'http:') +
+            '//securepubads.g.doubleclick.net/tag/js/gpt.js';
+              gads.setAttribute("async", "");
+              gads.setAttribute("defer", "");
+          var node = document.getElementsByTagName('script')[0];
+          node.parentNode.insertBefore(gads, node);
+          })();
+
+        var App = App || {};
+        App.Ads = App.Ads || {};
+        App.Ads.adPath = App.Ads.adPath || '/6479/' + 'ama.jama.pubs';
+        App.Ads.Mappings = App.Ads.Mappings || {};
+        App.Ads.slots = App.Ads.slots || [];
+        App.Ads.fromGoogle = !('yes' === 'yes');
+
+        App.isCollection = App.isCollection || !!document.getElementsByClassName('pg_collection').length;
+
+        
+        googletag.cmd.push(function () {
+
+          googletag.pubads()
+            .setTargeting('environment', ['newjama'])
+            .setTargeting('site', ['ama.jama.pubs'])
+            .setTargeting('sect', ['search'])
+            .setTargeting('sub', ['no'])
+            .setTargeting('device', ['Mozilla%2F5.0'])
+            .setTargeting('usaphys', ['no'])
+            .setTargeting('memberstat', ['no'])
+            .setTargeting('pracset', [''])
+            .setTargeting('specialty', ['other'])
+            .setTargeting('occupation', [''])
+            .setTargeting('useraffinity', [''])
+            .setTargeting('direct', ['yes'])
+            .setTargeting('bot', [''])
+            .setTargeting('datacenter', ['no'])
+            .setTargeting('selfMPA', [''])
+            .setTargeting('selfSpecialty', ['']);
+
+          if (App.isCollection) {
+            googletag.pubads().setTargeting('collection', ['']);
+          }
+
+          var testParam = getQueryVariable('test');
+
+          if (testParam) {
+            googletag.pubads().setTargeting('test', [testParam]);
+          }
+
+          function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+              var pair = vars[i].split('=');
+              if (decodeURIComponent(pair[0]) == variable) {
+                return decodeURIComponent(pair[1]);
+              }
+            }
+          }
+
+          googletag.pubads().disableInitialLoad();
+          googletag.enableServices();
+        });
+      }
+  </script>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="telephone=no" name="format-detection"/>
+  <link href="//cdn.jamanetwork.com/UI/app/img/favicons/umb/favicon.ico" rel="shortcut icon"/>
+  <link href="//cdn.jamanetwork.com/UI/app/img/favicons/umb/favicon-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+  <link href="//cdn.jamanetwork.com/UI/app/img/favicons/umb/apple-touch-icon-180x180.png" rel="apple-touch-icon" sizes="180x180"/>
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible"/>
+  <link href="//cdn.jamanetwork.com/UI/app/dist/app.min.css?v=638488852237037766" rel="stylesheet"/>
+  <title>
+   Search Results
+  </title>
+  <meta content="NOINDEX, NOFOLLOW" name="ROBOTS"/>
+  <link href="https://jamanetwork.com/searchresults" rel="canonical">
+   <link href="//cdn.jamanetwork.com/UI/app/vendor/jqueryui/jquery-ui.datepicker.css" rel="stylesheet" type="text/css">
+    <script src="//cdn.jamanetwork.com/UI/app/dist/head.min.js?v=638488852268208351">
+    </script>
+    <script src="https://r451.jamanetwork.com/script.js">
+    </script>
+    <div class="widget-WidgetLoader widget-instance-AMA_AdTag_HeaderScript">
+     <meta class="SCM-SharedWidgets-AsyncHeaderAdLoader" data-params='{"parameters":{"siteName":null,"siteId":11,"journalId":0,"adDisplay":0,"adSection":"search","adPosition":"","fromGoogle":false},"dynamicParameters":{"localParams":"[REPLACE_WITH_LOCAL]"}}' data-url="/AMA/AdTag/AMA_AdTag_HeaderScript"/>
+    </div>
+   </link>
+  </link>
+ </head>
+ <body class="pg_searchresults" data-sitename="jamanetwork" data-thm="umb">
+  <script>
+   var App = App || {};
+        App.suppressAds = App.suppressAds || !!document.getElementsByClassName('suppress-ads').length;
+        App.suppressGtm = App.suppressGtm || !!document.getElementsByClassName('suppress-gtm').length;
+  </script>
+  <div class="ad-interstitial" id="ad-interstitial">
+   <script>
+    googletag.cmd.push(function() {
+        if (App.suppressAds) { return; }
+        App.Ads.slots[13] = googletag.defineOutOfPageSlot(App.Ads.adPath + '/search', 'ad-interstitial')
+          .setTargeting('pos', ['interstitial'])
+          .addService(googletag.pubads());
+        googletag.display('ad-interstitial');
+        googletag.pubads().refresh([App.Ads.slots[13]], {changeCorrelator: false});
+      });
+   </script>
+  </div>
+  <a class="accessible js-skip-to-navigation" href="#skip-to-navigation">
+   [Skip to Navigation]
+  </a>
+  <!-- Google Tag Manager -->
+  <noscript>
+   <iframe height="0" src="//www.googletagmanager.com/ns.html?id=GTM-WNKSNP" style="display:none;visibility:hidden" width="0">
+   </iframe>
+  </noscript>
+  <script>
+   (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-WNKSNP');
+  </script>
+  <!-- End Google Tag Manager -->
+  <span class="hide tagmanagervalue" data-attribute="productName" data-type="string" data-value="JAMA Network">
+  </span>
+  <form action="./searchresults?q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_OpenAccessFilter=true" class="m0" id="webform" method="post">
+   <div class="aspNetHidden">
+    <input id="__VIEWSTATE" name="__VIEWSTATE" type="hidden" value="+huPtz/955cnX69Q8Nod+V3WsUj2sGGbTzFm0B4/fEIik6EU7ChTA+/dOjY5fqDqvkdntnCRR0dpk16rCD60OHN6fkE0Z5rUlq6J1GuU4ax1MGXnZZtzF9ps+C66cwX8gxMRC6IueeUzOOMCcT8lFZK6OYedT1JldalddLLVk1c/T4oM5PsYaSzJlD7/tOxv0Z3cQ3BRAi9oSD1sNQicRm2Nv7sHNfnbGQcAaNw07wQV27AvMcfSzq1V4TEjogg6poCGyMjfFGa3+39UVHwa4rW4HjHrc3N9X4q5pk01KrMiaoNjtk7tlxeyq2DrYyLBAX+5i+xGxJ/X02QPUEm8NckmmYEO+04LfghI6dVTpUfYWfAD5CgU4IC3+EK8xmWOWCeucC8Mqv5DkEMz8Lhm6XHqabUqYWkE/IHyBgGN+afAAkVuzXMqVeswHEdEzSlcuH/JJ/P90rRCPZdhnNdgsdRKJ6uKrwR5Tx8zVP1YPNuN/K/y2pnTTXlBdv1Kl7w4XszAcfTfG+LhpjKa9feCy+Sb094fdQJCXtVU1S18HG0PS16iniF0/fsMOSIoBUy50mSmKvSCfkHtmBD/3YYap2lAgWB/6DIW8WPPKEbLpzhMRzuK46ktplggYubtUqkoG1KlidPTRvwEBLsJzAfwuwcjTr/mYZjH23FKOWeUKLLX+bRdOIzrfStw8KDntzPZLL73U7yk7JKqGb0LnFlVSiHT+8AGACMzWDu6Q/WlXvECwF20NZYTdkzjHBAxXTed3b1LW3p3uPF2YAXUADcVEESD6eEJOxECSpNzGaPW6s4ohJHa45Z4/FmQXZd0a8BMw8aBCVkej1wHlEwMVc0EPEqWMI8="/>
+   </div>
+   <div class="aspNetHidden">
+    <input id="__VIEWSTATEGENERATOR" name="__VIEWSTATEGENERATOR" type="hidden" value="DF508A8A"/>
+    <input id="__EVENTVALIDATION" name="__EVENTVALIDATION" type="hidden" value="eZgbUMBxWJNYa5ai5w7aIQyhEz9XGwwhkevH0F4trDu9AmhKzvTWv7Bqd/Om92ErdreWsU0v3Vegv1/rVAgnrocTlon8DU+gtqT7AxmNZTfA6hYksTIUVZk0TAjfVIXYojmXwAU+FDPqplWMkeXb75oEzHnyxUdJ9bgP1pZ2lrxL9w+JtRogQHrLQG6VG3MNKFvy34Za069doiSPfmOKeZmhUeALLmzi+3E92ZEE73ZZbxfzPZEISYgpTw0dnKk21PELtuJSjadIzREq024/TqEg1ovMoFdJkeN1iswDaf4lw29acntK5M7GVjdLdsDH1YwPlKGYsjz8RwXI7Zg4QBEltlACPOWjCx0Ju+qBEAEiMU9jN9Juu+mZ0zqF0nYCbmgMgJMPJmAUmBLxbFmmaG7OUR5JtXPur3KtPUPmVRmPiWsVBK2O6jBBrM+fZBPUSEy/gs4Y3JGWHNqMXN1o1px70ChAO285uFPpwmis07X1kySY2d9n5gl3lS5fx1czXBQpMde2X8DYyogcx/JLas0Pr9HS7XOpsZAwFzU2noLOdgQiqEfi3thDZzzPOlCXfuuOuabsaVLeYrAWbPINvT527t++NyMezBGjeXSjE14io+cMuroNl2B6ZWIpW5lo0bCtr+D1/9/rAs5XHWx6HPEzLNc="/>
+   </div>
+   <input id="hdnSiteID" type="hidden" value="11"/>
+   <input id="hdnDomain" type="hidden" value=".jamanetwork.com"/>
+   <section class="master-header">
+    <script type="text/javascript">
+     var App = App || {};
+    App.LoginUserInfo = {
+        isInstLoggedIn: [0],
+        currentSessionId: 'x5luumi3vkqsmyqvpg1xi2ky'
+    };
+    </script>
+    <input id="hfGlobalSearchSiteURL" name="ctl00$ctl00$BodyContent$Header$hfGlobalSearchSiteURL" type="hidden" value="https://jamanetwork.com/"/>
+    <input id="hfAppIsPaidUser" name="ctl00$ctl00$BodyContent$Header$hfAppIsPaidUser" type="hidden" value="false"/>
+    <input id="hfAppIsMember" name="ctl00$ctl00$BodyContent$Header$hfAppIsMember" type="hidden" value="false"/>
+    <input id="hfAppSubscribedTo" name="ctl00$ctl00$BodyContent$Header$hfAppSubscribedTo" type="hidden"/>
+    <input id="hfAppIsIndividual" name="ctl00$ctl00$BodyContent$Header$hfAppIsIndividual" type="hidden" value="false"/>
+    <input id="hfAppHasAccess" name="ctl00$ctl00$BodyContent$Header$hfAppHasAccess" type="hidden" value="false"/>
+    <input id="hfAppIsReferredFromGoogle" name="ctl00$ctl00$BodyContent$Header$hfAppIsReferredFromGoogle" type="hidden" value="False"/>
+    <input id="hfSolrAutoSuggestMinimumCharactersLength" name="ctl00$ctl00$BodyContent$Header$hfSolrAutoSuggestMinimumCharactersLength" type="hidden" value="2"/>
+    <input id="hfSolrJournalName" name="ctl00$ctl00$BodyContent$Header$hfSolrJournalName" type="hidden"/>
+    <input id="hfSolrJournalID" name="ctl00$ctl00$BodyContent$Header$hfSolrJournalID" type="hidden"/>
+    <input id="hfAppIsLucy" name="ctl00$ctl00$BodyContent$Header$hfAppIsLucy" type="hidden" value="false"/>
+    <div class="header-wrap">
+     <header class="header">
+      <div class="widget-GdprCookieBanner widget-instance-GdprCookieBanner">
+       <div class="gdpr-cookie-wrapper js-gdpr-banner">
+        <div class="gdpr-cookie-body">
+         Our website uses cookies to enhance your experience. By continuing to use our site, or clicking "Continue," you are agreeing to our
+         <a href="https://jamanetwork.com/pages/privacy-policy#cookies">
+          Cookie Policy
+         </a>
+         <span class="pipe">
+          |
+         </span>
+         <a class="js-gdpr-cookie-acceptLink at-acceptgdpr" href="javascript:;">
+          Continue
+         </a>
+        </div>
+        <input id="hdnDomain" type="hidden" value=".jamanetwork.com"/>
+        <input id="hdnDomainGdpr" type="hidden" value=".jamanetwork.com"/>
+        <input id="hdnClientIdGdpr" type="hidden" value="3"/>
+       </div>
+      </div>
+      <div class="network-bar">
+       <a class="jama-network" href="/" title="JAMA Network Home">
+        <img alt="JAMA Network Home" class="title-image" height="52" src="//cdn.jamanetwork.com/UI/app/svg/Jama_Network_Logo.svg" width="443"/>
+       </a>
+      </div>
+      <a class="nav-toggler" href="#nav">
+       <div class="nav-toggler-indicator">
+        <span class="indicator-stroke">
+        </span>
+        <span class="indicator-stroke">
+        </span>
+        <span class="indicator-stroke">
+        </span>
+        <span class="indicator-stroke">
+        </span>
+       </div>
+       <div class="nav-toggler-site">
+        <span class="nav-toggler-microsite" id="BodyContent_Header_siteFullNamenav">
+         <span class="network">
+          JAMA
+         </span>
+         Network
+        </span>
+       </div>
+      </a>
+      <nav class="nav hide" id="nav">
+       <div class="nav-journal-level sb-nav-journal-level">
+        <a class="for-authors" href="/pages/for-authors" id="BodyContent_Header_rptMicrositeHeaders_aItemResourceList_0">
+         For Authors
+        </a>
+        <a class="podcasts" href="/pages/audio" id="BodyContent_Header_rptMicrositeHeaders_aItemResourceList_1">
+         Podcasts
+        </a>
+        <a class="video" href="/pages/video" id="BodyContent_Header_rptMicrositeHeaders_aItemResourceList_2">
+         Video
+        </a>
+        <a class="cme" href="https://edhub.ama-assn.org/jn-learning" id="BodyContent_Header_rptMicrositeHeaders_aItemResourceList_3" target="_blank">
+         CME
+        </a>
+       </div>
+       <div class="nav-journals">
+        <div class="widget-SelfServeContent widget-instance-HamburgerPublicationMenu">
+         <div class="self-serve">
+          <input class="SelfServeContentId" type="hidden" value="HamburgerPublicationMenu"/>
+          <input class="SelfServeVersionId" type="hidden" value="0"/>
+          <style type="text/css">
+           .nav-journals {margin-bottom: 1em;}
+    .nav-heading {color: #B9B9B9;border-bottom: 1px solid #242424;border-top: 1px solid #242424;font-size: 1.15em;font-weight: 400;margin: 0;padding: .7em .75em;text-transform: uppercase;}
+    a.no-bullet:before {content:none !important;}
+    .nav-heading {font-size: 1.15em;margin-bottom:0;padding-left: 38px;}
+    .nav-journals a.theme-jama {background-color: #242424;border-bottom: 1px solid #fff;border-top: 1px solid #fff;color: #fff;font-size: 1.15em;margin-bottom: 8px;padding: 11px 0 9px 37px;}
+    .nav-journals a.theme-jama::before {background: unset;content: "\e91b";display: none;font-family: ama_icons !important;font-size: 1.25em;line-height: 1;}
+    .nav-journals a.theme-jama-network-open {border-bottom:0;}
+    .nav .widget-instance-HamburgerPublicationMenu a {padding-left: 36px;}
+    .fake-ribbon {border-left: 8px solid #BE1E32;}
+    .fake-ribbon a:before {content:none;}
+    .nav .widget-instance-HamburgerPublicationMenu .fake-ribbon a {padding-left:30px;}
+          </style>
+          <h2 class="nav-heading">
+           Journals
+          </h2>
+          <a class="theme-jama" href="/journals/jama">
+           JAMA
+          </a>
+          <a class="theme-jama-network-open" href="/journals/jamanetworkopen">
+           JAMA Network Open
+          </a>
+          <a class="theme-jama-cardiology" href="/journals/jamacardiology">
+           JAMA Cardiology
+          </a>
+          <a class="theme-jama-dermatology" href="/journals/jamadermatology">
+           JAMA Dermatology
+          </a>
+          <a class="theme-jama-health-forum" href="/journals/jama-health-forum">
+           JAMA Health Forum
+          </a>
+          <a class="theme-jama-internal-medicine" href="/journals/jamainternalmedicine">
+           JAMA Internal Medicine
+          </a>
+          <a class="theme-jama-neurology" href="/journals/jamaneurology">
+           JAMA Neurology
+          </a>
+          <a class="theme-jama-oncology" href="/journals/jamaoncology">
+           JAMA Oncology
+          </a>
+          <a class="theme-jama-ophthalmology" href="/journals/jamaophthalmology">
+           JAMA Ophthalmology
+          </a>
+          <a class="theme-jama-otolaryngology-head-neck-surgery" href="/journals/jamaotolaryngology">
+           JAMA Otolaryngology–Head &amp; Neck Surgery
+          </a>
+          <a class="theme-jama-pediatrics" href="/journals/jamapediatrics">
+           JAMA Pediatrics
+          </a>
+          <a class="theme-jama-psychiatry" href="/journals/jamapsychiatry">
+           JAMA Psychiatry
+          </a>
+          <a class="theme-jama-surgery" href="/journals/jamasurgery">
+           JAMA Surgery
+          </a>
+          <a class="theme-archives-of-neurology-psychiatry-1919-1959-" href="/journals/archneurpsyc">
+           Archives of Neurology &amp; Psychiatry (1919-1959)
+          </a>
+         </div>
+        </div>
+       </div>
+       <div class="nav-network-other">
+        <a class="is-b link-jn-learning-cme" href="https://edhub.ama-assn.org/jn-learning" id="BodyContent_Header_rptOtherResources_aItemResourceList_0" target="_blank">
+         JN Learning / CME
+        </a>
+        <a class="is-b link-subscribe" href="https://store.jamanetwork.com" id="BodyContent_Header_rptOtherResources_aItemResourceList_1" target="_blank">
+         Subscribe
+        </a>
+        <a class="is-b link-jobs" href="https://careers.jamanetwork.com/" id="BodyContent_Header_rptOtherResources_aItemResourceList_2" target="_blank">
+         Jobs
+        </a>
+        <a class="is-b link-institutions-librarians" href="https://jamanetwork.com/pages/resources-for-librarians" id="BodyContent_Header_rptOtherResources_aItemResourceList_3">
+         Institutions / Librarians
+        </a>
+        <a class="is-b link-reprints-permissions" href="https://jamanetwork.com/pages/reprints-and-permissions" id="BodyContent_Header_rptOtherResources_aItemResourceList_4" rel="nofollow">
+         Reprints &amp; Permissions
+        </a>
+       </div>
+       <div class="white text-xxs">
+        <div class="p05 ml4 mr3 mb1 mt10 flex hamburger-menu-legal">
+         <a class="p0" href="/pages/conditions-of-use" rel="nofollow">
+          Terms of Use
+         </a>
+         <span class="pl1 pr1">
+          |
+         </span>
+         <a class="p0" href="/pages/privacy-policy" rel="nofollow">
+          Privacy Policy
+         </a>
+         <span class="pl1 pr1">
+          |
+         </span>
+         <a class="p0" href="/pages/accessibility-statement" rel="nofollow">
+          Accessibility Statement
+         </a>
+        </div>
+        <div class="ta-c">
+         <span class="pb1">
+          2024 American Medical Association. All Rights Reserved
+         </span>
+        </div>
+       </div>
+      </nav>
+      <a class="toolbar-search-trigger is-b" data-mobile-tog-target=".site-search">
+      </a>
+      <div class="site-search" id="site-search" role="search">
+       <div class="site-search-bar">
+        <div role="search">
+         <select aria-labelledby="searchLabel" class="cs-select cs-skin-border" id="BodyContent_Header_ddlForSearch" name="dropDownList" role="options" title="Search Site Selector">
+          <option value="J*">
+           Search All
+          </option>
+          <option value="3">
+           JAMA
+          </option>
+          <option value="214">
+           JAMA Network Open
+          </option>
+          <option value="192">
+           JAMA Cardiology
+          </option>
+          <option value="12">
+           JAMA Dermatology
+          </option>
+          <option value="261">
+           JAMA Forum Archive
+          </option>
+          <option value="193">
+           JAMA Health Forum
+          </option>
+          <option value="15">
+           JAMA Internal Medicine
+          </option>
+          <option value="16">
+           JAMA Neurology
+          </option>
+          <option value="159">
+           JAMA Oncology
+          </option>
+          <option value="17">
+           JAMA Ophthalmology
+          </option>
+          <option value="18">
+           JAMA Otolaryngology–Head &amp; Neck Surgery
+          </option>
+          <option value="19">
+           JAMA Pediatrics
+          </option>
+          <option value="14">
+           JAMA Psychiatry
+          </option>
+          <option value="20">
+           JAMA Surgery
+          </option>
+          <option value="23">
+           Archives of Neurology &amp; Psychiatry
+          </option>
+         </select>
+        </div>
+        <div class="search-input-container">
+         <input aria-labelledby="searchLabel" autocomplete="off" class="search-term at-microsite-search-term" id="search-term" maxlength="255" name="textbox" placeholder="Enter Search Term" role="textbox" title="Enter Search Term" type="search"/>
+         <ul class="term-list hidden" id="umbrellaSiteAutoCompleteResults">
+         </ul>
+         <label for="umbrellaSiteSearchInputHint" id="searchLabel" style="display:none">
+          Input Search Term
+         </label>
+         <input aria-labelledby="searchLabel" autocomplete="off" class="searchTerm search-input" id="umbrellaSiteSearchInputHint" name="textbox" role="textbox" title="Input Search Term" type="text"/>
+        </div>
+        <!-- /.search-input-container -->
+        <a alt="search button" class="search-button is-b" href="javascript:;" name="button" role="button">
+        </a>
+       </div>
+      </div>
+      <div class="auth" id="BodyContent_Header_GlobalSignIn_auth">
+       <a class="auth--trigger is-b is-a" href="javascript:;">
+        <span class="user-full-name" id="BodyContent_Header_GlobalSignIn_spnUserFullName">
+         Sign In
+        </span>
+       </a>
+       <div class="auth--dropdown js-signIn-dropdown">
+        <div class="auth--option auth--ind">
+         <div class="auth--ind-user" id="BodyContent_Header_GlobalSignIn_divUserFullName">
+         </div>
+         <div class="auth--ind-auth" id="BodyContent_Header_GlobalSignIn_divIndSignIn">
+          <div class="auth--title">
+           Individual Sign In
+          </div>
+          <a class="auth--ind-sign-in" href="https://jamanetwork.com/oauthsignin?return_url=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" id="BodyContent_Header_GlobalSignIn_oauthSignInLink" rel="nofollow">
+           Sign in
+          </a>
+          <a class="auth--ind-create" href="https://jamanetwork.com/oauthsignin?return_url=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" id="BodyContent_Header_GlobalSignIn_oauthSignUpLink" rel="nofollow">
+           Create an Account
+          </a>
+         </div>
+        </div>
+        <div class="auth--option auth--inst" id="BodyContent_Header_GlobalSignIn_divInstSignIn">
+         <div class="auth--inst-auth">
+          <div class="auth--title">
+           Access through your institution
+          </div>
+          <a class="auth--shib" href="/signinshibboleth?returnUrl=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%257BDEFAULT_BOOST_FUNCTION%257D%2522clinical%2522%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" id="BodyContent_Header_GlobalSignIn_institutionSignIn" rel="nofollow">
+           Sign In
+          </a>
+         </div>
+        </div>
+        <div class="auth--option auth--purchase" id="BodyContent_Header_GlobalSignIn_divPurchaseOptions">
+         <div class="auth--title">
+          Purchase Options:
+         </div>
+         <a class="auth--subscribe" href="https://store.jamanetwork.com" id="BodyContent_Header_GlobalSignIn_lnkSubscribeJournal" rel="nofollow">
+          Subscriptions and More
+         </a>
+        </div>
+       </div>
+      </div>
+     </header>
+    </div>
+    <div class="editors-choice-header">
+    </div>
+    <div class="header-ad-wrap sb-background-primary-dark" id="BodyContent_Header_divAds">
+     <div class="leader-ad desktop-only">
+      <div class="widget-WidgetLoader widget-instance-AMA_AdTag_LeaderboardAd">
+       <div class="SCM-SharedWidgets-AsyncAdLoader" data-params='{"parameters":{"siteName":null,"siteId":11,"journalId":0,"adDisplay":1,"adSection":"search","adPosition":"atf","fromGoogle":false},"dynamicParameters":{"localParams":"[REPLACE_WITH_LOCAL]"}}' data-url="/AMA/AdTag/AMA_AdTag_LeaderboardAd">
+       </div>
+      </div>
+     </div>
+    </div>
+    <!-- /.header-ad-wrap -->
+   </section>
+   <section class="master-main">
+    <a href="#" id="skip-to-navigation" tabindex="-1">
+    </a>
+    <div class="content">
+     <div id="searchResultsPage">
+      <div class="widget-SolrSearch widget-instance-AMAv2_SearchResults">
+       <div id="divSearch">
+        <div class="page">
+         <h2 class="sr-description">
+          8459 results for
+          <span class="sr-terms">
+           'clinical'
+          </span>
+         </h2>
+         <a class="advanced-search-link is-b" href="/advanced-search">
+          Advanced Search
+         </a>
+         <div class="mobile-filters small-only" id="searchOffNav">
+          <a class="gap narrow-filter" href="#sidebar" id="narrow-filter">
+           <i class="icon-filter">
+           </i>
+           Filter
+          </a>
+         </div>
+         <div class="searchPage search-wrap relative">
+          <section class="sf-module search-facets" id="sidebar" role="complementary">
+           <div class="solrSearchSaveWidget">
+            <div class="widget-SelfServeContent widget-instance-AMA_Search_Results_Notice">
+             <div class="self-serve">
+              <input class="SelfServeContentId" type="hidden" value="Search_Results_Notice">
+               <input class="SelfServeVersionId" type="hidden" value="0">
+                <link href="https://cdn.jamanetwork.com/data/CSSUploads/jamanetwork-notice.css?versionId=74187" rel="stylesheet"/>
+                <div class="offensive-content-statement">
+                 <a href="/pages/offensive-content-statement">
+                  JAMA Network Statement on Potentially Offensive Content
+                 </a>
+                </div>
+                <!--JN Search_Results_Notice and JNL past issues notice -->
+               </input>
+              </input>
+             </div>
+            </div>
+            <h4 aria-label="My Saved Searches" class="fw-b" name="My Saved Searches" role="group" value="My Saved Searches">
+             My Saved Searches
+            </h4>
+            <div class="save-search">
+             <a aria-label="Save Search" class="save-search-link fw-b is-b" href="#" name="Save Search" role="link" value="Save Search">
+              Save Search
+             </a>
+            </div>
+            <div class="selected-save-search" style="display: none;">
+             <a class="clear-selected-save-search is-b">
+             </a>
+             <span aria-label="selected-save-search" class="selected-save-search-txt fw-b jama" name="selected-save-search" role="button" value="selected-save-search">
+             </span>
+            </div>
+            <div class="view-edit-searches">
+             <a class="view-edit-btn btn" href="#" label="View / Edit All" name="View / Edit All" role="button" value="View / Edit All">
+              View / Edit All
+             </a>
+            </div>
+            <div class="reveal-modal medium modal" data-reveal="" id="save-a-search-modal">
+             <h4 class="fw-b" label="Name your search" name="Name your search" role="group" value="Name your search">
+              Name your search
+             </h4>
+             <div class="saved-search-name">
+              <!-- For ADA compliance -->
+              <label aria-label="Saved Search Name" for="txtSavedSearchName" style="display:none">
+               Saved Search Name
+              </label>
+              <input class="saved-search-name-textbox fw-b" id="txtSavedSearchName" name="SavedSearchName" role="textbox" type="text" value=""/>
+              <label class="saved-search-name-error fw-b mb1 red" style="display: none;">
+               NoError
+              </label>
+             </div>
+             <div class="save-search-modal-buttons">
+              <!-- For ADA compliance -->
+              <label aria-label="Saved Search Button" for="btnSaveSearch" style="display:none">
+               Saved Search Button
+              </label>
+              <button class="save-search-btn btn btn--jama" id="btnSaveSearch" name="SavedSearchButton" role="button" value="">
+               Save search
+              </button>
+             </div>
+             <a class="close-reveal-modal icon-close">
+             </a>
+            </div>
+           </div>
+           <div class="facets-inner">
+            <div class="sf-group">
+             <div class="search-facet">
+              <header class="sf-group-header sf-group-header-publication">
+               <h4 class="facet-title">
+                Publication
+               </h4>
+              </header>
+              <ul class="sf-facet-list sf-facet-list-publication type-multi-select">
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=214&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Network Open
+                <span class="sf-count">
+                 (6990)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=193&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Health Forum
+                <span class="sf-count">
+                 (271)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=159&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Oncology
+                <span class="sf-count">
+                 (250)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=16&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Neurology
+                <span class="sf-count">
+                 (188)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=14&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Psychiatry
+                <span class="sf-count">
+                 (176)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=192&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Cardiology
+                <span class="sf-count">
+                 (115)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=15&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Internal Medicine
+                <span class="sf-count">
+                 (111)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=19&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Pediatrics
+                <span class="sf-count">
+                 (108)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=17&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Ophthalmology
+                <span class="sf-count">
+                 (83)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=12&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Dermatology
+                <span class="sf-count">
+                 (77)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=20&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Surgery
+                <span class="sf-count">
+                 (64)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=18&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA Otolaryngology–Head &amp; Neck Surgery
+                <span class="sf-count">
+                 (24)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_SiteID=3&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                JAMA
+                <span class="sf-count">
+                 (2)
+                </span>
+               </li>
+              </ul>
+             </div>
+             <div class="search-facet">
+              <header class="sf-group-header sf-group-header-collection">
+               <h4 class="facet-title">
+                Collection
+               </h4>
+              </header>
+              <ul class="sf-facet-list sf-facet-list-collection type-multi-select">
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Oncology" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Oncology
+                <span class="sf-count">
+                 (1743)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Pediatrics" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Pediatrics
+                <span class="sf-count">
+                 (1656)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Health+Policy" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Health Policy
+                <span class="sf-count">
+                 (1647)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Psychiatry+and+Behavioral+Health" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Psychiatry and Behavioral Health
+                <span class="sf-count">
+                 (1057)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Neurology" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Neurology
+                <span class="sf-count">
+                 (1022)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Women%27s+Health" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Women's Health
+                <span class="sf-count">
+                 (967)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Infectious+Diseases" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Infectious Diseases
+                <span class="sf-count">
+                 (948)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Cardiology" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Cardiology
+                <span class="sf-count">
+                 (926)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Coronavirus+(COVID-19)" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Coronavirus (COVID-19)
+                <span class="sf-count">
+                 (922)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_Categories=Surgery" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Surgery
+                <span class="sf-count">
+                 (907)
+                </span>
+               </li>
+              </ul>
+             </div>
+             <div class="search-facet">
+              <header class="sf-group-header sf-group-header-article-type">
+               <h4 class="facet-title">
+                Article Type
+               </h4>
+              </header>
+              <ul class="sf-facet-list sf-facet-list-article-type type-multi-select">
+               <li class="sf-facet">
+                <input checked="checked" class="chkSelect" data-redirect-url="q=clinical&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Research
+                <span class="sf-count">
+                 (8459)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=ResearchANDOpinion&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Opinion
+                <span class="sf-count">
+                 (1384)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=ResearchANDNews&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                News
+                <span class="sf-count">
+                 (50)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=ResearchANDReview&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Review
+                <span class="sf-count">
+                 (21)
+                </span>
+               </li>
+              </ul>
+             </div>
+             <div class="search-facet">
+              <header class="sf-group-header sf-group-header-topics">
+               <h4 class="facet-title">
+                Topics
+               </h4>
+              </header>
+              <ul class="sf-facet-list sf-facet-list-topics type-multi-select">
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=child" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                child
+                <span class="sf-count">
+                 (810)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=covid-19" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                covid-19
+                <span class="sf-count">
+                 (700)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=follow-up" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                follow-up
+                <span class="sf-count">
+                 (693)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=cancer" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                cancer
+                <span class="sf-count">
+                 (621)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=surgical+procedures%2c+operative" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                surgical procedures, operative
+                <span class="sf-count">
+                 (611)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=adolescent" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                adolescent
+                <span class="sf-count">
+                 (401)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=older+adult" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                older adult
+                <span class="sf-count">
+                 (379)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=screening" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                screening
+                <span class="sf-count">
+                 (368)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=diabetes+mellitus%2c+type+2" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                diabetes mellitus, type 2
+                <span class="sf-count">
+                 (317)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_SemanticFilterTopics=depressive+disorders" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                depressive disorders
+                <span class="sf-count">
+                 (296)
+                </span>
+               </li>
+              </ul>
+             </div>
+             <div class="search-facet">
+              <header class="sf-group-header sf-group-header-content-type">
+               <h4 class="facet-title">
+                Content Type
+               </h4>
+              </header>
+              <ul class="sf-facet-list sf-facet-list-content-type type-multi-select">
+               <li class="sf-facet">
+                <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;f_ContentType=Article&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                <input name="chk" type="hidden" value="false"/>
+                Article
+                <span class="sf-count">
+                 (8459)
+                </span>
+               </li>
+              </ul>
+             </div>
+             <div class="search-facet">
+              <header class="sf-group-header sf-group-header-filter">
+               <h4 class="facet-title">
+                Filters
+               </h4>
+               <a class="clear" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" href="#">
+                Clear
+               </a>
+              </header>
+              <ul class="sf-facet-list sf-facet-list-filter type-single-prefix">
+               <li class="sf-facet">
+                <span>
+                 <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_HasCME=true" id="chk" name="chk" type="checkbox" value="true"/>
+                 <input name="chk" type="hidden" value="false"/>
+                 CME
+                                (423)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <span>
+                 <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_FreeAccessFilter=true" id="chk" name="chk" type="checkbox" value="true"/>
+                 <input name="chk" type="hidden" value="false"/>
+                 Free
+                                (8459)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <span>
+                 <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_IsOnlineFirst=true" id="chk" name="chk" type="checkbox" value="true"/>
+                 <input name="chk" type="hidden" value="false"/>
+                 Online First
+                                (36)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <span>
+                 <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_HasMultimedia=true" id="chk" name="chk" type="checkbox" value="true"/>
+                 <input name="chk" type="hidden" value="false"/>
+                 Has Multimedia
+                                (251)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <span>
+                 <input class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_IsOnlineOnly=true" id="chk" name="chk" type="checkbox" value="true"/>
+                 <input name="chk" type="hidden" value="false"/>
+                 Online Only
+                                (165)
+                </span>
+               </li>
+               <li class="sf-facet">
+                <span>
+                 <input checked="checked" class="chkSelect" data-redirect-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" id="chk" name="chk" type="checkbox" value="true"/>
+                 <input name="chk" type="hidden" value="false"/>
+                 Open Access
+                                (8459)
+                </span>
+               </li>
+              </ul>
+             </div>
+            </div>
+            <div class="sf-group search-facet date-facet">
+             <header class="sf-group-header">
+              <h4 class="title">
+               Date Range
+              </h4>
+             </header>
+             <div class="sf-facets">
+              <span class="date-group clearfix">
+               <label class="label">
+                From
+               </label>
+               <input id="fromDate" placeholder="mm/dd/yyyy" type="text"/>
+              </span>
+              <span class="date-group clearfix">
+               <label class="label">
+                To
+               </label>
+               <input id="ToDate" placeholder="mm/dd/yyyy" type="text"/>
+              </span>
+              <label class="btn" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;f_OpenAccessFilter=true&amp;rg_ArticleDate=queryText" for="Apply" id="btnRangeSearch">
+               Apply
+              </label>
+             </div>
+            </div>
+           </div>
+          </section>
+          <section class="sr-module al-article-list-group module-listview search-results" role="main">
+           <header class="sr-header">
+            <div class="sr-facets sr-active-facets thm-bg">
+             <span class="sr-facet">
+              Open Access
+              <a class="close thm-col" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" href="#">
+               X
+              </a>
+             </span>
+             <span class="sr-facet">
+              Research
+              <a class="close" data-url="q=clinical&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1" href="#">
+               X
+              </a>
+             </span>
+            </div>
+           </header>
+           <div class="sr-statistics hide">
+            Showing
+            <strong>
+             1 – 20
+            </strong>
+            of
+            <strong>
+             8459
+            </strong>
+           </div>
+           <div class="pagesize">
+           </div>
+           <div class="sr-filters">
+            <div class="sr-sort sort">
+             <strong class="active sort-item">
+              Relevance
+             </strong>
+             <span class="separator">
+              |
+             </span>
+             <a class="sort-link sort-item" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_OpenAccessFilter=true&amp;sort=Newest" href="#">
+              Newest
+             </a>
+             <span class="separator">
+              |
+             </span>
+             <a class="sort-link sort-item" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=1&amp;f_OpenAccessFilter=true&amp;sort=Oldest" href="#">
+              Oldest
+             </a>
+             <span class="separator">
+              |
+             </span>
+            </div>
+           </div>
+           <ul class="search-results-list">
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817565" data-article-url="/journals/jamapediatrics/articlepdf/2817565/jamapediatrics_devlin_2024_oi_240013_1712584284.60215.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-pediatrics">
+               JAMA Pediatrics
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 15, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamapediatrics/fullarticle/2817565?resultClick=1">
+               Influence of Eat, Sleep, and Console on Infants Pharmacologically Treated for Opioid Withdrawal:  A Post Hoc Subgroup Analysis of the ESC-NOW Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Lori A. Devlin, DO; Zhuopei Hu, MS; Stephanie L. Merhar, MD; Songthip T. Ounpraseuth, PhD; Alan E. Simon, MD; Jeannette Y. Lee, PhD; Abhik Das, PhD; Margaret M. Crawford, BS; Rachel G. Greenberg, MD; P. Brian Smith, MD; Rosemary D. Higgins, MD; Michele C. Walsh, MD; Ward Rice, MD, PhD; David A. Paul, MD; Jessie R. Maxwell, MD; Camille M. Fung, MD; Tanner Wright, MD; Julie Ross, MD; Jennifer M. McAllister, MD; Moira Crowley, MD; Sophie K. Shaikh, MD; Lori Christ, MD; Jaime Brown, MD; Julie Riccio, MD; Kara Wong Ramsey, MD; Erica F. Braswell, MD; Lauren Tucker, MD; Karen McAlmon, MD; Krishna Dummula, MD; Julie Weiner, DO; Jessica R. White, MD; Sarah Newman, APRN; Jessica N. Snowden, MD; Leslie W. Young, MD; Eunice Kennedy Shriver NICHD Neonatal Research Network and NIH Environmental Influences on Child Health Outcomes (ECHO) Program Institutional Development Award States Pediatric Clinical Trials Network
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamapediatrics/article-abstract/2817565">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamapediatrics/fullarticle/2817565">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+              <span class="badge icon-online_first">
+               <span class="sr-t">
+                online first
+               </span>
+              </span>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Pediatr.
+              </i>
+              2024;  10.1001/jamapediatrics.2024.0544
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial examines data for infants pharmacologically treated for neonatal opioid withdrawal in a subgroup analysis to evaluate differences in opioid exposure and length of hospital stay comparing a function-based care approach vs usual care.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2815702" data-article-url="/journals/jamaoncology/articlepdf/2815702/jamaoncology_lubinski_2024_oi_230090_1712704282.69385.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-oncology">
+               JAMA Oncology
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               February 29, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamaoncology/fullarticle/2815702?resultClick=1">
+               MRI Surveillance and Breast Cancer Mortality in Women With  BRCA1  and  BRCA2  Sequence Variations
+              </a>
+             </h3>
+             <div class="article--authors">
+              Jan Lubinski, MD, PhD; Joanne Kotsopoulos, PhD; Pal Moller, MD; Tuya Pal, MD; Andrea Eisen, MD; Larissa Peck, MSc; Beth Y. Karlan, MD; Amber Aeilts, MSc; Charis Eng, MD, PhD; Louise Bordeleau, MD; William D. Foulkes, MBBS, PhD; Nadine Tung, MD; Fergus J. Couch, PhD; Robert Fruscio, MD; Teresa Ramon y Cajal, MD; Christian F. Singer, MD, MPH; Susan L. Neuhausen, PhD; Dana Zakalik, MD; Cezary Cybulski, MD, PhD; Jacek Gronwald, MD, PhD; Tomasz Huzarski, MD; Klaudia Stempa, MD, PhD; Jeffrey Dungan, MD; Carey Cullinane, MD; Olufunmilayo I. Olopade, MD; Kelly Metcalfe, PhD; Ping Sun, PhD; Steven A. Narod, MD; Hereditary Breast Cancer
+              <b style="background:yellow">
+               Clinical
+              </b>
+              Study Group
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamaoncology/article-abstract/2815702">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamaoncology/fullarticle/2815702">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Oncol.
+              </i>
+              2024; 10(4):493-499. 10.1001/jamaoncol.2023.6944
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This cohort study examines the association between magnetic resonance imaging (MRI) surveillance and the risk of breast cancer mortality in women with
+                 <italic>
+                  BRCA1
+                 </italic>
+                 or
+                 <italic>
+                  BRCA2
+                 </italic>
+                 sequence variations.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2813142" data-article-url="/journals/jamanetworkopen/articlepdf/2813142/camirandlemyre_2023_oi_231358_1702404979.99379.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Equity, Diversity, and Inclusion
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               December 26, 2023
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2813142?resultClick=1">
+               Implementation of Recommendations on the Use of Corticosteroids in Severe COVID-19
+              </a>
+             </h3>
+             <div class="article--authors">
+              Félix Camirand-Lemyre, PhD; Laura Merson; Bharath Kumar Tirupakuzhi Vijayaraghavan, MD, MSc; Aidan J. C. Burrell, MBBS, DDU, PhD; Barbara Wanjiru Citarella, MSc; Marie-Pier Domingue, BSc; Simon Lévesque, BSc; Effua Usuf, MBChB, MSc, PhD; Evert-Jan Wils, MD, PhD; Shinichiro Ohshimo, MD, PhD; Ignacio Martin-Loeches, MD, PhD; Oana Sǎndulescu, MD, PhD; Jon Henrik Laake, MD, PhD; François Lamontagne, MD, MSc; ISARIC
+              <b style="background:yellow">
+               Clinical
+              </b>
+              Characterisation Group
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2813142">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2813142">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2023; 6(12):e2346502. 10.1001/jamanetworkopen.2023.46502
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This large cohort study assesses variations over time and across World Health Organization geographic regions for the use of corticosteroids in treating patients with severe or critical COVID-19.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2810624" data-article-url="/journals/jamapsychiatry/articlepdf/2810624/jamapsychiatry_haas_2023_oi_230077_1703694733.68927.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-psychiatry">
+               JAMA Psychiatry
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               October 11, 2023
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2810624?resultClick=1">
+               Normative Modeling of Brain Morphometry in
+               <b style="background:yellow">
+                Clinical
+               </b>
+               High Risk for Psychosis
+              </a>
+             </h3>
+             <div class="article--authors">
+              ENIGMA
+              <b style="background:yellow">
+               Clinical
+              </b>
+              High Risk for Psychosis Working Group
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamapsychiatry/article-abstract/2810624">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2810624">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Psychiatry.
+              </i>
+              2023; 81(1):77-88. 10.1001/jamapsychiatry.2023.3850
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This case-control study assesses the association of brain morphometric changes that deviate from the normative range and with positive symptoms, cognition, and conversion to a psychotic disorder among individuals at high risk for psychosis.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817870" data-article-url="/journals/jamanetworkopen/articlepdf/2817870/jiang_2024_oi_240277_1713196849.05719.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Anesthesiology
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 23, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817870?resultClick=1">
+               Cognitive Training for Reduction of Delirium in Patients Undergoing Cardiac Surgery:  A Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Yu Jiang, MD; Yanhu Xie, MD; Panpan Fang, MD; Zixiang Shang, MD; Lihai Chen, MD; Jifang Zhou, MD; Chao Yang, MD; Wenjie Zhu, MD; Xixi Hao, MD; Jianming Ding, MD; Panpan Yin, MD; Zan Wang, MD; Mengyuan Cao, MD; Yu Zhang, MD; Qilian Tan, MD; Dan Cheng, MD; Siyu Kong, MD; Xianfu Lu, MD; Xuesheng Liu, MD; Daniel I. Sessler, MD; CT-LIFE Study Collaborators
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817870">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817870">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e247361. 10.1001/jamanetworkopen.2024.7361
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial assesses whether preoperative cognitive training reduces the incidence of delirium among patients in China undergoing coronary artery bypass grafting surgery.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817859" data-article-url="/journals/jamanetworkopen/articlepdf/2817859/bjrnebo_2024_oi_240272_1713196766.31739.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Oncology
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 22, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817859?resultClick=1">
+               Biomarker vs MRI-Enhanced Strategies for Prostate Cancer Screening:  The STHLM3-MRI Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Lars Björnebo, MD, MSc; Andrea Discacciati, PhD; Ugo Falagario, MD; Hari T. Vigneswaran, MD; Fredrik Jäderling, MD, PhD; Henrik Grönberg, MD, PhD; Martin Eklund, PhD; Tobias Nordström, MD, PhD; Anna Lantz, MD, PhD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817859">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817859">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e247131. 10.1001/jamanetworkopen.2024.7131
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial compared use of a biomarker-based strategy vs a magnetic resonance imaging–enhanced strategy for detection of clinically significant prostate cancer among men in Sweden.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817858" data-article-url="/journals/jamanetworkopen/articlepdf/2817858/zheng_2024_oi_240273_1713196762.841.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Pediatrics
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 22, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817858?resultClick=1">
+               Breast Milk Enema and Meconium Evacuation Among Preterm Infants:  A Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Liqiang Zheng, MD, PhD; Li Gai, MD; Yani Wu, BS; Chaonan Kong, BS; Fangli Sun, BS; Jinyue Gao, MD; Wei Yuan, MD; Min Liu, BS; Hong Jiang, BS; Nan Tuo, MD, PhD; Fan Yang, MD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817858">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817858">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e247145. 10.1001/jamanetworkopen.2024.7145
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial examines whether breast milk enemas can shorten the time to complete meconium evacuation and achievement of full enteral feeding for infants born preterm in China.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817832" data-article-url="/journals/jamanetworkopen/articlepdf/2817832/granbom_koski_2024_oi_240283_1712939651.46815.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Cardiology
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 19, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817832?resultClick=1">
+               Comparative Long-Term
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Performance of Mechanical Aortic Valve Prostheses
+              </a>
+             </h3>
+             <div class="article--authors">
+              Malin Granbom Koski, MD; Natalie Glaser, MD, PhD; Anders Franco-Cereceda, MD, PhD; Ulrik Sartipy, MD, PhD; Michael Dismorr, MD, PhD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817832">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817832">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e247525. 10.1001/jamanetworkopen.2024.7525
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This cohort study compares the clinical performance of mechanical aortic valve prostheses in Sweden.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817839" data-article-url="/journals/jamanetworkopen/articlepdf/2817839/yeung_2024_oi_240235_1712939671.76368.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Complementary and Alternative Medicine
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 19, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817839?resultClick=1">
+               Self-Administered Acupressure for Probable Knee Osteoarthritis in Middle-Aged and Older Adults:  A Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Wing-Fai Yeung, PhD; Shu-Cheng Chen, PhD; Denise Shuk Ting Cheung, PhD; Carlos King-Ho Wong, PhD; Tsz Chung Chong, DPT; Yuen Shan Ho, PhD; Lorna Kwai Ping Suen, PhD; Lai Ming Ho, PhD; Lixing Lao, PhD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817839">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817839">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e245830. 10.1001/jamanetworkopen.2024.5830
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial evaluates the effectiveness of self-administered acupressure on reducing knee osteoarthritis (OA) pain among middle-aged and older adults.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817813" data-article-url="/journals/jamanetworkopen/articlepdf/2817813/li_2024_oi_240256_1712855434.12824.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Anesthesiology
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 18, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817813?resultClick=1">
+               Transcranial Direct Current Stimulation for Anxiety During Laparoscopic Colorectal Cancer Surgery:  A Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Chunyan Li, MD; Mingshu Tao, MD; Dexian Chen, MD; Qi Wei, MD; Xingyu Xiong, MD; Wenxin Zhao, MD; Wen Tan, MD; Jie Yang, MD; Yuan Han, MD, PhD; Hongxing Zhang, MD, PhD; Song Zhang, MD, PhD; He Liu, MD, PhD; Jun-Li Cao, MD, PhD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817813">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817813">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e246589. 10.1001/jamanetworkopen.2024.6589
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial examines the effect of transcranial direct current stimulation (tDCS) on perioperative anxiety in patients undergoing colorectal cancer (CRC) resection in China.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817814" data-article-url="/journals/jamanetworkopen/articlepdf/2817814/birmingham_2024_oi_240255_1712855437.98806.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Orthopedics
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 18, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817814?resultClick=1">
+               Incidence of Total Knee Arthroplasty After Arthroscopic Surgery for Knee Osteoarthritis:  A Secondary Analysis of a Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Trevor B. Birmingham, PhD; Codie A. Primeau, PhD; Salimah Z. Shariff, PhD; Jennifer N. S. Reid, MSc; Jacquelyn D. Marsh, PhD; Melody Lam, MSc; Stephanie N. Dixon, PhD; J. Robert Giffin, MD; Kevin R. Willits, MD; Robert B. Litchfield, MD; Brian G. Feagan, MD; Peter J. Fowler, MD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817814">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817814">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e246578. 10.1001/jamanetworkopen.2024.6578
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This extended follow-up of a randomized clinical trial compares the long-term incidence of total knee arthroplasty on the study knee between patients undergoing arthroscopic surgery and nonsurgical management for osteoarthritis.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817617" data-article-url="/journals/jamanetworkopen/articlepdf/2817617/dafsari_2024_oi_240236_1712593635.13021.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Psychiatry
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 15, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817617?resultClick=1">
+               Perceived Physical Health and Cognitive Behavioral Therapy vs Supportive Psychotherapy Outcomes in Adults With Late-Life Depression:  A Secondary Analysis of a Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Forugh S. Dafsari, MD; Bettina Bewernick, PhD; Sabine Böhringer, MSc; Katharina Domschke, MD, PhD; Moritz Elsaesser, MSc; Margrit Löbner, PhD; Melanie Luppa, PhD; Sandra Schmitt, MSc; Katja Wingenfeld, PhD; Elena Wolf, MSc; Nadine Zehender, MSc; Martin Hellmich, PhD; Wiebke Müller, MSc; Michael Wagner, PhD; Oliver Peters, MD; Lutz Frölich, MD; Steffi Riedel-Heller, MD; Elisabeth Schramm, PhD; Martin Hautzinger, PhD; Frank Jessen, MD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817617">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817617">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e245841. 10.1001/jamanetworkopen.2024.5841
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This secondary analysis of a randomized clinical trial investigates the association of physical diseases and perception of physical health with psychotherapy treatment outcome, response, and remission in patients in Germany with late-life depression.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817606" data-article-url="/journals/jamainternalmedicine/articlepdf/2817606/jamainternal_jhamb_2024_oi_240016_1712590815.76585.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-internal-medicine">
+               JAMA Internal Medicine
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 15, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2817606?resultClick=1">
+               Electronic Health Record Population Health Management for Chronic Kidney Disease Care:  A Cluster Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Manisha Jhamb, MD, MPH; Melanie R. Weltman, PharmD; Susan M. Devaraj, PhD, MS, RD; Linda-Marie Ustaris Lavenburg, DO, MS; Zhuoheng Han, MS; Alaa A. Alghwiri, PhD; Gary S. Fischer, MD; Bruce L. Rollman, MD, MPH; Thomas D. Nolin, PharmD, PhD; Jonathan G. Yabes, PhD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamainternalmedicine/article-abstract/2817606">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2817606">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+              <span class="badge icon-online_first">
+               <span class="sr-t">
+                online first
+               </span>
+              </span>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Intern Med.
+              </i>
+              2024;  10.1001/jamainternmed.2024.0708
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This cluster randomized clinical trial examines the effectiveness of an electronic health record–based population health management intervention vs usual care for reducing chronic kidney disease progression.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817479" data-article-url="/journals/jamanetworkopen/articlepdf/2817479/daly_2024_oi_240246_1712250586.07613.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Health Policy
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 12, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817479?resultClick=1">
+               Remote Monitoring and Data Collection for Decentralized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trials
+              </a>
+             </h3>
+             <div class="article--authors">
+              Bobby Daly, MD, MBA; Otis W. Brawley, MD; Mary K. Gospodarowicz, MD; Olufunmilayo I. Olopade, MD; Lola Fashoyin-Aje, MD, MPH; Victoria Wolodzko Smart, BA; I-Fen Chang, PharmD; Craig L. Tendler, MD; Geoffrey Kim, MD; Charles S. Fuchs, MD, MPH; Muhammad Shaalan Beg, MD, MBA; Lianshan Zhang, PhD; Jeffrey J. Legos, MD, MBA; Cristina Ortega Duran, CIMA; Chitkala Kalidas, PhD; Jing Qian, LLM; Justin Finnegan, MBA; Piotr Pilarski, MD; Harriet Keane, PhD; Johanna Shen, MS; Amy Silverstein, PhD; Yi-Long Wu, MD; Richard Pazdur, MD; Bob T. Li, MD, PhD, MPH
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817479">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817479">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e246228. 10.1001/jamanetworkopen.2024.6228
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This survey study assesses the current state of decentralized trial technology adoption and highlights industry aspirations and directions for use to enable more patient-centric trials.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817481" data-article-url="/journals/jamanetworkopen/articlepdf/2817481/kiser_2024_oi_240226_1712250590.46267.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Occupational Health
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 12, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817481?resultClick=1">
+               Physician Coaching by Professionally Trained Peers for Burnout and Well-Being:  A Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Stephanie B. Kiser, MD, MPH; J. David Sterns, MD, MPH; Po Ying Lai, MS; Nora K. Horick, MS; Kerri Palamara, MD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817481">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817481">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e245645. 10.1001/jamanetworkopen.2024.5645
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial explores the effect of individualized coaching by professionally trained peers on physician burnout and well-being.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817446" data-article-url="/journals/jamanetworkopen/articlepdf/2817446/sarma_2024_ld_240037_1712178333.80882.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Research Letter
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Equity, Diversity, and Inclusion
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 11, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817446?resultClick=1">
+               Gender and
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Status in Burnout in Medicine
+              </a>
+             </h3>
+             <div class="article--authors">
+              Deesha Sarma, MD; David T. Chiu, MD, MPH; Alexa B. Kimball, MD, MPH
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817446">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817446">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e246575. 10.1001/jamanetworkopen.2024.6575
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This survey study assesses feelings of satisfaction, stress, and burnout by gender and clinical status among health care workers at a single academic center.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817301" data-article-url="/journals/jamapediatrics/articlepdf/2817301/jamapediatrics_xie_2024_oi_240014_1711988910.70788.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-pediatrics">
+               JAMA Pediatrics
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 8, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamapediatrics/fullarticle/2817301?resultClick=1">
+               Naked-Eye 3-Dimensional Vision Training for Myopia Control:  A Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Rui Xie, MM; Feng Zhao, MD, PhD; Jianhong Yu, MD; Bin Luo, MM; Zhidong Jiang, MD; Xiaoyun Qiu, MD; Yingpin Cao, MD, PhD; Yuxia Yang, MD, PhD; Kezhe Chen, MM; Yuan Zhang, BSc; Xiaoling Luo, MD, PhD; Zhirong Wang, MD, PhD; Yingting Zhu, MD; Yehong Zhuo, MD, PhD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamapediatrics/article-abstract/2817301">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamapediatrics/fullarticle/2817301">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+              <span class="badge icon-multimedia">
+               <span class="sr-t">
+                has multimedia
+               </span>
+              </span>
+              <span class="badge icon-online_first">
+               <span class="sr-t">
+                online first
+               </span>
+              </span>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Pediatr.
+              </i>
+              2024;  10.1001/jamapediatrics.2024.0578
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial assesses the efficacy and safety of computer-based 3-dimensional vision training for preventing the progression of myopia in children.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817291" data-article-url="/journals/jamanetworkopen/articlepdf/2817291/taggart_2024_oi_240237_1711740828.83023.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Cardiology
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 8, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817291?resultClick=1">
+               Application of the Universal Definition of Myocardial Infarction in
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Practice in Scotland and Sweden
+              </a>
+             </h3>
+             <div class="article--authors">
+              Caelan Taggart, MD; Andreas Roos, MD, PhD; Erik Kadesjö, MD, PhD; Atul Anand, MD, PhD; Ziwen Li, PhD; Dimitrios Doudesis, PhD; Kuan Ken Lee, MD, PhD; Anda Bularga, MD; Ryan Wereski, MD; Matthew T. H. Lowry, MD; Andrew R. Chapman, MD, PhD; Amy V. Ferry, PhD; Anoop S. V. Shah, MD, PhD; Anton Gard, MD; Bertil Lindahl, MD, PhD; Gustaf Edgren, MD, PhD; Nicholas L. Mills, MD, PhD; Dorien M. Kimenai, PhD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817291">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817291">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e245853. 10.1001/jamanetworkopen.2024.5853
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This cohort study evaluates the application of the universal definition of myocardial infarction (MI) in consecutive patients with possible MI across 2 health care systems in Scotland and Sweden.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817297" data-article-url="/journals/jamanetworkopen/articlepdf/2817297/shen_2024_oi_240207_1711740846.00226.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-network-open">
+               JAMA Network Open
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Urology
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 8, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817297?resultClick=1">
+               Intravesical Interferon Therapy vs Hyaluronic Acid for Pain Among Female Individuals With Interstitial Cystitis:  A Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Si-hong Shen, MM; Liao Peng, MD; Xiao Zeng, MD; Jie Zhang, MM; Hong Shen, MD; De-yi Luo, PhD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamanetworkopen/article-abstract/2817297">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2817297">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Netw Open.
+              </i>
+              2024; 7(4):e244880. 10.1001/jamanetworkopen.2024.4880
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial examines the safety and efficacy of intravesical interferon instillation compared with hyaluronic acid in female patients with interstitial cystitis.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+            <li class="article search-result">
+             <div class="al-other-resource-links">
+              <a class="al-link pdf pdfaccess" data-ajax-url="/Content/CheckPdfAccess" data-article-id="2817488" data-article-url="/journals/jamainternalmedicine/articlepdf/2817488/jamainternal_hayward_2024_oi_240008_1712252063.79385.pdf?resultClick=1">
+              </a>
+             </div>
+             <div class="article--information">
+              <span class="article--journal jama-internal-medicine">
+               JAMA Internal Medicine
+              </span>
+              <span class="article--article-type pipe-before fw-5 black va-m">
+               Original Investigation
+              </span>
+              <span class="article--superclassification pipe-before fw-5 black va-m">
+               Women's Health
+              </span>
+              <div class="article--pub-date fw-5 black va-m">
+               April 8, 2024
+              </div>
+             </div>
+             <h3 class="article--title at-sr-item-title-link">
+              <a href="https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2817488?resultClick=1">
+               d -Mannose for Prevention of Recurrent Urinary Tract Infection Among Women:  A Randomized
+               <b style="background:yellow">
+                Clinical
+               </b>
+               Trial
+              </a>
+             </h3>
+             <div class="article--authors">
+              Gail Hayward, DPhil; Sam Mort, PGCert; Alastair D. Hay, MD; Michael Moore, MSc; Nicholas P. B. Thomas, PhD; Johanna Cook, MSc; Jared Robinson, BSc; Nicola Williams, MSc; Nicola Maeder; Rebecca Edeson, BSc; Marloes Franssen, PhD; Jenna Grabey, MSc; Margaret Glogowska, PhD; Yaling Yang, PhD; Julie Allen, MSc; Christopher C. Butler, MD
+             </div>
+             <div class="article--links">
+              <a class="article--abstract" href="https://jamanetwork.com/journals/jamainternalmedicine/article-abstract/2817488">
+               Abstract
+              </a>
+              <a class="article--full-text" href="https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2817488">
+               Full Text
+              </a>
+             </div>
+             <div class="badges">
+              <span class="badge icon-open_access">
+               <span class="sr-t">
+                open access
+               </span>
+              </span>
+              <input id="sriopenAccess" name="sriopenAccess" type="hidden" value="Open Access"/>
+              <span class="badge icon-online_first">
+               <span class="sr-t">
+                online first
+               </span>
+              </span>
+             </div>
+             <cite class="article--citation">
+              <i>
+               JAMA Intern Med.
+              </i>
+              2024;  10.1001/jamainternmed.2024.0264
+             </cite>
+             <div class="article--excerpt">
+              <content>
+               <abstract abstract-type="teaser">
+                <p>
+                 This randomized clinical trial seeks to determine whether
+                 <sc>
+                  d
+                 </sc>
+                 -mannose taken for 6 months reduces the proportion of women with recurrent urinary tract infections experiencing a medically attended urinary tract infection.
+                </p>
+               </abstract>
+              </content>
+             </div>
+            </li>
+           </ul>
+           <div class="pagination al-pagination">
+            <a class="sr-nav-previous al-nav-previous inactive" href="#" style="display:none;">
+             <span class="al-prev-text">
+              « Previous
+             </span>
+            </a>
+            <div class="pageNumbers al-pageNumbers">
+             <span class="currentPage al-currentPage thm-bg">
+              1
+             </span>
+             <a class="al-pageNumber thm-bg-hover" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=2" href="#">
+              2
+             </a>
+             <a class="al-pageNumber thm-bg-hover" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=3" href="#">
+              3
+             </a>
+             <a class="al-pageNumber thm-bg-hover" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=4" href="#">
+              4
+             </a>
+             <a class="al-pageNumber thm-bg-hover" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=5" href="#">
+              5
+             </a>
+            </div>
+            <a class="sr-nav-next al-nav-next" data-url="q=clinical&amp;f_ArticleTypeDisplayName=Research&amp;f_OpenAccessFilter=true&amp;exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&amp;exPrm_hl.q=clinical&amp;page=2" href="#">
+             <span class="al-next-text">
+              Next 20 Results »
+             </span>
+            </a>
+           </div>
+           <div class="pagesize">
+           </div>
+          </section>
+          <input id="Config_SearchAlertMyAccoutUrl" name="Config.SearchAlertMyAccoutUrl" type="hidden" value="/account/myalerts.aspx#myEmail"/>
+         </div>
+        </div>
+        <input id="bRetainQueryStringParams" type="hidden"/>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="master-footer" id="secFooterControl">
+    <script>
+     var App = App || {};
+
+            function scmByClass(className) {
+                return document.getElementsByClassName(className);
+            }
+
+            function scmById(id) {
+                return document.getElementById(id);
+            }
+
+            function scmquery(selector) {
+                return document.querySelector(selector);
+            }
+
+            function queryAll(selector) {
+                return document.querySelectorAll(selector);
+            }
+
+            function isTrueString(string) {
+                if (typeof string === 'string') {
+                    return string.toLowerCase() === 'true';
+                }
+
+                return undefined;
+            }
+
+            function updateViewportDimensions() {
+                var w = window, d = document, e = d.documentElement, g = d.getElementsByTagName('body')[0], x = w.innerWidth || e.clientWidth || g.clientWidth, y = w.innerHeight || e.clientHeight || g.clientHeight;
+                return { width: x, height: y };
+            }
+
+            var viewport = updateViewportDimensions();
+
+            var debounce = function (func, wait, immediate) {
+                var timeout;
+                return function () {
+                    var context = this, args = arguments;
+                    var later = function () {
+                        timeout = null;
+                        if (!immediate) func.apply(context, args);
+                    };
+                    var callNow = immediate && !timeout;
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                    if (callNow) func.apply(context, args);
+                };
+            };
+
+            (function (App) {
+                App.mobileUpperBreakpoint = 767;
+                App.mobileAltBreakpoint = 640;
+                App.mobileMinBreakpoint = 547;
+                App.tabletUpperBreakpoint = 1023;
+
+                function setVariables() {
+                    viewport = updateViewportDimensions();
+                    App.isMobile = (viewport.width <= App.mobileUpperBreakpoint);
+                    App.isMobileAlt = (viewport.width <= App.mobileAltBreakpoint);
+                    App.isTablet = (viewport.width > App.mobileUpperBreakpoint && viewport.width <= App.tabletUpperBreakpoint);
+                    App.isTabletDown = (viewport.width <= App.tabletUpperBreakpoint);
+                    App.isDesktop = (viewport.width > App.tabletUpperBreakpoint);
+                    App.activeViewport = App.isMobile ? 'small' : App.isTablet ? 'med' : 'large';
+                }
+
+                setVariables();
+
+                App.cachedViewport = App.isMobile ? 'small' : App.isTablet ? 'med' : 'large';
+                App.isAnyArticle = !!(scmByClass('widget-ArticleFullView').length || scmByClass('pg_abstract').length
+                    || scmByClass('widget-MagazineView').length || scmByClass('widget-ChannelsMagazineView').length);
+                App.isSplitScreen = !!scmByClass('widget-ArticleFullView').length;
+                App.isAbstract = !!scmByClass('pg_abstract').length;
+                App.isMag = !!(scmByClass('widget-MagazineView').length);
+                App.isChannel = !!(scmByClass('channel-site').length);
+                App.isChannelMag = !!(scmByClass('widget-ChannelsMagazineView').length);
+                App.isFreeArticle = !!(scmquery('.widget-ArticleTopInfo .free-access') ||
+                                        scmquery('.widget-ArticleTopInfo .open-access') ||
+                                        scmquery('.widget-ArticleTopInfo .icon-free') || 
+                                        scmquery('.widget-ChannelsMagazineView .free-access'));
+                App.isTollFreeAccess = false;
+                App.isIssue = !!scmByClass('pg_issue').length || !!scmByClass('pg_newonline').length || !!scmByClass('pg_currentissue').length || !!scmByClass('pg_pastissues').length;
+                App.isNewOnline = !!scmByClass('pg_newonline').length;
+                App.isCurrentIssue = !!scmByClass('pg_currentissue').length;
+                App.isPastIssues = !!scmByClass('pg_pastissues').length;
+                App.isJournal = !!scmByClass('pg_journal').length;
+                App.isNetworkHome = !!scmByClass('pg_index').length;
+                App.isSearch = !!scmByClass('pg_searchresults').length;
+                App.isAdvancedSearch = !!scmByClass('pg_advancedsearch').length;
+                App.isPlayer= !!scmByClass('pg_multimediaplayer').length;
+                App.isSelfServe = !!scmByClass('pg_sspage').length;
+                App.isCmsPage = !!scmByClass('pg_cmspage').length; 
+                App.isMyAccount = !!scmByClass('pg_myaccount').length;
+                App.supportsFlexbox = !!scmByClass('flexbox').length;
+                App.isCollection = !!scmByClass('pg_collection').length;
+                App.isPaidUser = isTrueString(scmById('hfAppIsPaidUser').getAttribute('value'));
+                App.isMember = isTrueString(scmById('hfAppIsMember').getAttribute('value'));
+                App.isIndividual = isTrueString(scmById('hfAppIsIndividual').getAttribute('value'));
+                App.hasAccess = isTrueString(scmById('hfAppHasAccess').getAttribute('value'));
+                App.isReferredFromGoogle = isTrueString(scmById('hfAppIsReferredFromGoogle').getAttribute('value'));
+                var subscribedTo = scmById('hfAppSubscribedTo').getAttribute('value');
+                App.userSubscribedTo = subscribedTo ? subscribedTo.split(',') : undefined;
+                App.isLucy = isTrueString(scmById('hfAppIsLucy').getAttribute('value'));
+                App.currentJournalCount = 26;
+                App.isChannelPage = !!(scmByClass('channels-page'));
+                App.updateAppVariables = debounce(function () {
+                    setVariables();
+                }, 50, false);
+            })(App);
+    </script>
+    <div class="footer-ad-wrapper">
+     <div class="footer-ad desktop-only" id="BodyContent_Footer_divAds">
+      <div class="widget-WidgetLoader widget-instance-AMA_AdTag_AnchorboardAd_btf">
+       <div class="SCM-SharedWidgets-AsyncAdLoader" data-params='{"parameters":{"siteName":null,"siteId":11,"journalId":0,"adDisplay":11,"adSection":"search","adPosition":"btf","fromGoogle":false},"dynamicParameters":{"localParams":"[REPLACE_WITH_LOCAL]"}}' data-url="/AMA/AdTag/AMA_AdTag_AnchorboardAd_btf">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="ad-riser-wrap desktop-only">
+     <div class="ad-riser--dismiss t-c">
+      X
+     </div>
+     <div class="widget-WidgetLoader widget-instance-AMA_AdTag_Riser">
+      <div class="SCM-SharedWidgets-AsyncAdLoader" data-params='{"parameters":{"siteName":null,"siteId":11,"journalId":0,"adDisplay":12,"adSection":"search","adPosition":"Riser","fromGoogle":false},"dynamicParameters":{"localParams":"[REPLACE_WITH_LOCAL]"}}' data-url="/AMA/AdTag/AMA_AdTag_Riser">
+      </div>
+     </div>
+    </div>
+    <div class="footer-wrap">
+     <footer class="footer" id="footer">
+      <div class="footer-microsite" id="footer-microsite">
+       <input class="SelfServeContentId" type="hidden" value="v2_Footer_Left"/>
+       <input class="SelfServeVersionId" type="hidden" value="0"/>
+       <style type="text/css">
+        .footer-microsite-contents {margin-bottom:1em;}
+    .footer-network-other .link-apps:before {width: 23px;}
+    .footer-network-other .link-institutions-librarians:before {width: 23px;}
+    .jn-ss-footer-border-top {border-top:1px solid #555;padding-top:15px;}
+    .jn-ss-footer-border-bottom {border-bottom:1px solid #555;padding-bottom:10px;}
+    .jn-ss-footer-button-gray {background: grey !important;}
+    .jn-ss-footer-button-gray:hover {background: #fff !important;}
+    .widget-instance-AMAv2_EmailListSignUp_Footer .email-signup--submit {background: grey !important;}
+    .widget-instance-AMAv2_EmailListSignUp_Footer .email-signup--submit:hover {background: #fff !important;}
+       </style>
+       <div class="footer-heading-wrap">
+        <h3 class="footer-heading is-b footer-microsite-heading" data-mobile-tog-target=".footer-microsite-links-wrap" id="BodyContent_Footer_h3SiteName">
+         JAMA Network
+        </h3>
+       </div>
+       <div class="footer-microsite-links-wrap">
+        <div class="footer-microsite-contents">
+         <h4 class="footer-subheading" id="BodyContent_Footer_ContentHeader">
+          Content
+         </h4>
+         <a href="/">
+          Home
+         </a>
+         <a href="/pages/audio" target="_blank">
+          Podcasts
+         </a>
+         <a href="/pages/video" target="_blank">
+          Video
+         </a>
+         <a href="https://sites.jamanetwork.com/" target="_blank">
+          Featured Content
+         </a>
+        </div>
+        <div class="footer-network-other jn-ss-footer-border-top jn-ss-footer-border-bottom">
+         <a class="link-network-other is-b link-learning" href="https://edhub.ama-assn.org/jn-learning">
+          JN Learning / CME
+         </a>
+         <a class="link-network-other is-b link-store" href="https://store.jamanetwork.com" target="_blank">
+          Store
+         </a>
+         <a class="link-network-other is-b link-jobs" href="https://careers.jamanetwork.com/" target="_blank">
+          Jobs
+         </a>
+         <a class="link-network-other is-b link-institutions-librarians" href="/pages/resources-for-librarians" target="_blank">
+          Institutions
+         </a>
+         <a class="link-network-other is-b link-reprints-permissions" href="/pages/reprints-and-permissions" target="_blank">
+          Reprints &amp; Permissions
+         </a>
+        </div>
+        <div class="footer-microsite-subscribe" id="BodyContent_Footer_divSubscribe">
+         <div class="subscribe-meta">
+          <h4 class="subscribe-heading footer-subheading">
+           Subscribe
+          </h4>
+          <a class="subscribe-submit btn jn-ss-footer-button-gray" href="https://store.jamanetwork.com/">
+           Go
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="footer-network" id="footer-network">
+       <input class="SelfServeContentId" type="hidden" value="v2_Footer_Middle"/>
+       <input class="SelfServeVersionId" type="hidden" value="0"/>
+       <style type="text/css">
+        .footer-network-sites {width: 62.85542%;}
+    .footer-network-info {width: 35.93976%}
+    .jn-ss-subheading-mt {margin-top: 1.5em;}
+    .jn-registered:after {content: "\00AE";font-size: 50%;vertical-align: top;}
+    .jn-trademark:after {content: "\2122";font-size: 50%;vertical-align: top;}
+       </style>
+       <div class="footer-heading-wrap">
+        <h3 class="footer-heading is-b jn-registered" data-mobile-tog-target=".footer-network-links-wrap">
+         <strong>
+          JAMA
+         </strong>
+         Network
+        </h3>
+       </div>
+       <div class="footer-network-links-wrap">
+        <div class="footer-network-sites">
+         <div class="internal">
+          <h4 class="footer-subheading" id="BodyContent_Footer_JournalHeader">
+           Publications
+          </h4>
+          <a href="/journals/jama">
+           JAMA
+          </a>
+          <a href="/journals/jamanetworkopen" target="_blank">
+           JAMA Network Open
+          </a>
+          <a href="/journals/jamacardiology">
+           JAMA Cardiology
+          </a>
+          <a href="/journals/jamadermatology">
+           JAMA Dermatology
+          </a>
+          <a href="/journals/jama-health-forum">
+           JAMA Health Forum
+          </a>
+          <a href="/journals/jamainternalmedicine">
+           JAMA Internal Medicine
+          </a>
+          <a href="/journals/jamaneurology">
+           JAMA Neurology
+          </a>
+          <a href="/journals/jamaoncology">
+           JAMA Oncology
+          </a>
+          <a href="/journals/jamaophthalmology">
+           JAMA Ophthalmology
+          </a>
+          <a href="/journals/jamaotolaryngology">
+           JAMA Otolaryngology–Head &amp; Neck Surgery
+          </a>
+          <a href="/journals/jamapediatrics">
+           JAMA Pediatrics
+          </a>
+          <a href="/journals/jamapsychiatry">
+           JAMA Psychiatry
+          </a>
+          <a href="/journals/jamasurgery">
+           JAMA Surgery
+          </a>
+          <a href="/journals/archneurpsyc">
+           Archives of Neurology &amp; Psychiatry (1919-1959)
+          </a>
+         </div>
+         <div class="external">
+          <h4 class="footer-subheading">
+           Sites
+          </h4>
+          <div id="BodyContent_Footer_ssFooterSiteMenu">
+           <div class="selfServe">
+            <a href="https://sites.jamanetwork.com/art-and-images-in-psychiatry/" target="_blank">
+             Art and Images in Psychiatry
+            </a>
+            <a href="/channels/ai" target="_blank">
+             Artificial Intelligence (AI) Resource Center
+            </a>
+            <a href="/journals/jama/pages/2023-most-viewed-jama" target="_blank">
+             Best of the JAMA Network
+            </a>
+            <a href="/channels/caring-for-the-critically-ill-patient" target="_blank">
+             Caring for the Critically Ill Patient
+            </a>
+            <a href="/journals/jama/pages/crosswords" target="_blank">
+             Clinical Crosswords from JAMA
+            </a>
+            <a href="/journals/jama/pages/coronavirus-alert" target="_blank">
+             Coronavirus Resource Center
+            </a>
+            <a href="https://ebm.jamanetwork.com/index.html" target="_blank">
+             Evidence-Based Medicine: An Oral History
+            </a>
+            <a href="/pages/fishbein-fellowship" target="_blank">
+             Fishbein Fellowship
+            </a>
+            <a href="/channels/genomics/" target="_blank">
+             Genomics and Precision Health
+            </a>
+            <a href="/channels/hypertension" target="_blank">
+             Hypertension
+            </a>
+            <a href="/channels/health-forum/archive" target="_blank">
+             JAMA Forum Archive
+            </a>
+            <a href="https://sites.jamanetwork.com/audio" target="_blank">
+             JAMA Network Audio
+            </a>
+            <a href="/pages/video" target="_blank">
+             JAMA Network Video
+            </a>
+            <a href="/pages/conferences" target="_blank">
+             JAMA Network Conferences
+            </a>
+            <a href="/pages/jama-summit" target="_blank">
+             JAMA Summit
+            </a>
+            <a href="/journals/jamasurgery/pages/statistics-and-methods" target="_blank">
+             JAMA Surgery Guide to Statistics and Methods
+            </a>
+            <a href="/channels/medical-news" target="_blank">
+             Medical News
+            </a>
+            <a href="/channels/monkeypox" target="_blank">
+             Mpox (Monkeypox)
+            </a>
+            <a href="https://sites.jamanetwork.com/research-ethics/" target="_blank">
+             Research Ethics
+            </a>
+            <a href="/pages/collections" target="_blank">
+             Topics and Collections
+            </a>
+            <a href="/pages/visual-abstracts" target="_blank">
+             Visual Abstracts
+            </a>
+            <a href="/channels/war" target="_blank">
+             War and Health
+            </a>
+            <a href="/channels/womens-health" target="_blank">
+             Women's Health
+            </a>
+            <h4 class="footer-subheading jn-ss-subheading-mt">
+             Featured Articles
+            </h4>
+            <a href="/journals/jama/fullarticle/2799240">
+             Antiretroviral Drugs for HIV Treatment and Prevention in Adults - 2022 IAS-USA Recommendations
+            </a>
+            <a href="/journals/jama/fullarticle/2781397">
+             CONSERVE 2021 Guidelines for Reporting Trials Modified for the COVID-19 Pandemic
+            </a>
+            <a href="/journals/jama/fullarticle/2808296">
+             Creation and Adoption of Large Language Models in Medicine
+            </a>
+            <a href="/journals/jamaoncology/fullarticle/2787350">
+             Global Burden of Cancer, 2010-2019
+            </a>
+            <a href="/journals/jama/fullarticle/2797443">
+             Global Burden of Long COVID
+            </a>
+            <a href="/journals/jamadermatology/fullarticle/2790344">
+             Global Burden of Melanoma
+            </a>
+            <a href="/journals/jamadermatology/fullarticle/2787350">
+             Global Burden of Skin Diseases, 1990-2017
+            </a>
+            <a href="/journals/jamaneurology/fullarticle/2793874">
+             Global Disparities in Parkinson Disease
+            </a>
+            <a href="/journals/jama/fullarticle/2799547">
+             Guidelines for Reporting Outcomes in Trial Protocols: The SPIRIT-Outcomes 2022 Extension
+            </a>
+            <a href="/journals/jamapsychiatry/fullarticle/2799486">
+             Mass Violence and the Complex Spectrum of Mental Illness and Mental Functioning
+            </a>
+            <a href="/journals/jamapsychiatry/fullarticle/2793903">
+             Neuropsychiatry Sequelae of COVID-19
+            </a>
+            <a href="/journals/jamaneurology/fullarticle/2810313">
+             A New Framework for Dementia Nomenclature
+            </a>
+            <a href="/journals/jama/fullarticle/2800656">
+             Organization and Performance of US Health Systems
+            </a>
+            <a href="/journals/jama-health-forum/fullarticle/2791195">
+             Pharmacy Benefit Managers: History, Business Practices, Economics, and Policy
+            </a>
+            <a href="/journals/jama-health-forum/fullarticle/2791195">
+             Promoting EDI in Genetics Research
+            </a>
+            <a href="/journals/jamacardiology/fullarticle/2781972">
+             PTSD and Cardiovascular Disease
+            </a>
+            <a href="/journals/jama/fullarticle/2810754">
+             Red Blood Cell Transfusion: 2023 AABB International Guidelines
+            </a>
+            <a href="/journals/jamapediatrics/fullarticle/2797600">
+             Reimagining Children’s Rights in the US
+            </a>
+            <a href="/journals/jama/fullarticle/2794049">
+             Spirituality in Serious Illness and Health
+            </a>
+            <a href="/journals/jama/fullarticle/2796374">
+             The US Medicaid Program: Coverage, Financing, Reforms, and Implications for Health Equity
+            </a>
+            <h4 class="footer-subheading jn-ss-subheading-mt">
+             USPSTF Recommendation Statements
+            </h4>
+            <a href="/journals/jama/fullarticle/2779985">
+             Screening for Colorectal Cancer
+            </a>
+            <a href="/journals/jama/fullarticle/2779190">
+             Screening for Hypertension
+            </a>
+            <a href="/journals/jama/fullarticle/2777244">
+             Screening for Lung Cancer
+            </a>
+            <a href="/journals/jama/fullarticle/2796244">
+             Screening for Prediabetes and Type 2 Diabetes In Children
+            </a>
+            <a href="/journals/jama/fullarticle/2783414">
+             Screening for Prediabetes and Type 2 Diabetes In Adults
+            </a>
+            <a href="/journals/jama/fullarticle/2795521">
+             Statins for Primary Prevention of Cardiovascular Disease
+            </a>
+            <a href="/journals/jama/fullarticle/2793446">
+             Vitamin and Mineral Supplements for Primary Prevention of of Cardiovascular Disease and Cancer
+            </a>
+            <h4 class="footer-subheading jn-ss-subheading-mt">
+             Blogs
+            </h4>
+            <a href="https://amastyleinsider.com/" target="_blank">
+             AMA Style Insider
+            </a>
+           </div>
+          </div>
+         </div>
+        </div>
+        <div class="footer-network-info" id="footer-network-info">
+         <div class="information-for-links">
+          <h4 class="footer-subheading" id="BodyContent_Footer_InfoHeader">
+           Information
+          </h4>
+          <a href="/pages/for-authors">
+           For Authors
+          </a>
+          <a href="/pages/resources-for-librarians">
+           For Institutions &amp; Librarians
+          </a>
+          <a href="/pages/advertisers">
+           For Advertisers
+          </a>
+          <a href="/pages/subscription-agents">
+           For Subscription Agents
+          </a>
+          <a href="https://careers.jamanetwork.com/" target="_blank">
+           For Employers &amp; Job Seekers
+          </a>
+          <a href="https://media.jamanetwork.com" rel="nofollow" target="_blank">
+           For the Media
+          </a>
+          <a href="/pages/equity-diversity-inclusion">
+           Equity, Diversity, Inclusion
+          </a>
+          <a href="/pages/commenting-policy">
+           Online Commenting Policy
+          </a>
+          <a href="/pages/access-at-jama-network">
+           Public Access and Open Access Policy
+          </a>
+          <a href="/pages/offensive-content-statement">
+           Statement on Potentially Offensive Content
+          </a>
+         </div>
+         <div class="services-links">
+          <h4 class="footer-subheading" id="BodyContent_Footer_JAMANetworkProductsHeader">
+           JAMA Network Products
+          </h4>
+          <a class="footer-service-link" href="http://www.amamanualofstyle.com/" target="_blank">
+           AMA Manual of Style
+          </a>
+          <a class="footer-service-link" href="https://jamaevidence.mhmedical.com/" target="_blank">
+           <span class="jn-registered">
+            JAMAevidence
+           </span>
+          </a>
+          <a class="footer-service-link" href="http://www.peerreviewcongress.org/" target="_blank">
+           Peer Review Congress
+          </a>
+         </div>
+         <div class="learning-links">
+          <h4 class="footer-subheading" id="BodyContent_Footer_LearningHeader">
+           JN Learning
+          </h4>
+          <a href="https://edhub.ama-assn.org/jn-learning">
+           Home
+          </a>
+          <a href="https://edhub.ama-assn.org/jn-learning/state-cme">
+           State CME
+          </a>
+          <a href="https://edhub.ama-assn.org/jn-learning/pages/clinical-challenge-courses">
+           Clinical Challenge CME
+          </a>
+          <a href="https://edhub.ama-assn.org/jn-learning/course/288 ">
+           Atrial Fibrillation Course
+          </a>
+          <a href="https://edhub.ama-assn.org/jn-learning/course/294 ">
+           Women's Health Course
+          </a>
+          <a href="https://edhub.ama-assn.org/pages/auto-credit-reporting" target="_blank">
+           CME / MOC Reporting Preferences
+          </a>
+          <a href="https://edhub.ama-assn.org/jn-learning/pages/about-cme">
+           About CME &amp; MOC
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="footer-resources-wrap" id="footer-resources-wrap">
+       <input class="SelfServeContentId" type="hidden" value="v2_Footer_Right"/>
+       <input class="SelfServeVersionId" type="hidden" value="0"/>
+       <style type="text/css">
+        .footer-resources-wrap .footer-subheading {color: grey;display:block !important;font-size: 1.17647em;font-weight: 400;text-transform: uppercase;}
+       </style>
+       <div class="footer-heading-wrap">
+        <h3 class="footer-heading is-b footer-resources-heading" data-mobile-tog-target=".footer-resources">
+         Help
+        </h3>
+       </div>
+       <div class="footer-resources">
+        <a class="footer-service-link" href="https://store.jamanetwork.com" target="_blank">
+         Subscriptions &amp; Renewals
+        </a>
+        <a class="footer-service-link" href="https://jamanetwork.com/oauthsignin?return_url=http%3A%2F%2Fjamanetwork.com%2Fmyaccount%23my-alerts" rel="nofollow">
+         Manage Emails
+        </a>
+        <a class="footer-service-link" href="https://jamanetwork.com/oauthsignin?return_url=http%3A%2F%2Fjamanetwork.com%2Fmyaccount%23my-profile" rel="nofollow">
+         Update My Address
+        </a>
+        <a class="footer-service-link" href="https://support.jamanetwork.com/hc/en-us">
+         Support Center
+        </a>
+        <a class="footer-service-link" href="/myaccount ">
+         My Account
+        </a>
+        <h4 class="footer-subheading jn-ss-subheading-mt">
+         JAMA Career Center
+        </h4>
+        <a class="footer-service-link" href="https://careers.jamanetwork.com/" target="_blank">
+         Physician Job Listings
+        </a>
+       </div>
+       <input class="SelfServeContentId" type="hidden" value="v2_Footer_Socials"/>
+       <input class="SelfServeVersionId" type="hidden" value="0"/>
+       <style type="text/css">
+        .widget-instance-AMAv2_Network_Sidebar_Socials .iconsocial {display: inline-block !important;width: 34px;height: 34px;min-width: unset !important;margin: 0 2px !important;background-color: #fff;border-radius: 20px;border: 1px solid #191919;vertical-align: middle;}
+    .widget-instance-AMAv2_Network_Sidebar_Socials .iconsocial.instagram {background-image: url(https://cdn.jamanetwork.com/ImageLibrary/JamaNetwork/social/instagram-icon-black.svg);background-position: 7px 7px;background-repeat: no-repeat;background-size: 18px;}
+    .widget-instance-AMAv2_Network_Sidebar_Socials .iconsocial.instagram:hover, .widget-instance-AMA_Journal_Home_Socials .iconsocial.instagram:focus {background-image: url(https://cdn.jamanetwork.com/ImageLibrary/JamaNetwork/social/instagram-icon-fill.png);border-color: #C13584;}
+    .footer-resources-wrap .iconsocial {display: inline-block !important;width: 32px;height: 32px;min-width: unset !important;margin: 0 2px 0 3px !important;background-color: #fff;border-radius: 20px;border: 1px solid #191919;vertical-align: middle;}
+    .footer-resources-wrap .iconsocial.instagram {background-image: url(https://cdn.jamanetwork.com/ImageLibrary/JamaNetwork/social/instagram-icon-black.svg);background-position: 6px 6px;background-repeat: no-repeat;background-size: 18px;}
+    .footer-resources-wrap .iconsocial.instagram:hover, .footer-resources-wrap .iconsocial.instagram:focus {background-color: #C13584;border-color: #191919;}
+    #load-instagram-image { background: url(https://cdn.jamanetwork.com/ImageLibrary/JamaNetwork/social/instagram-icon-fill.png) no-repeat -9999px -9999px; }
+       </style>
+       <div class="social-links footer-social-links" id="BodyContent_Footer_divSocial">
+        <a class="social-link is-b facebook" data-emailid="06953c37-785c-4408-b2cd-4b9f89d3b8f1" href="https://www.facebook.com/JAMANetwork/" rel="nofollow" target="_blank">
+        </a>
+        <a class="social-link is-b twitter" data-emailid="06953c37-785c-4408-b2cd-4b9f89d3b8f1" href="https://twitter.com/JAMANetwork" rel="nofollow" target="_blank">
+        </a>
+        <a class="iconsocial instagram" data-emailid="6d35777a-fc12-4d2d-9b49-81d031835d91" href="https://www.instagram.com/jamanetwork/?hl=en" rel="nofollow" target="_blank">
+        </a>
+        <a class="social-link is-b linked-in" data-emailid="06953c37-785c-4408-b2cd-4b9f89d3b8f1" href="https://www.linkedin.com/company/jamanetwork/" rel="nofollow" target="_blank">
+        </a>
+        <a class="social-link is-b you-tube" data-emailid="06953c37-785c-4408-b2cd-4b9f89d3b8f1" href="https://www.youtube.com/jamanetwork" rel="nofollow" target="_blank">
+        </a>
+        <a class="social-link is-b pinterest" data-emailid="06953c37-785c-4408-b2cd-4b9f89d3b8f1" href="https://www.pinterest.com/jamanetwork/" rel="nofollow" target="_blank">
+        </a>
+        <a class="social-link is-b rss" data-emailid="06953c37-785c-4408-b2cd-4b9f89d3b8f1" href="/pages/rss/" rel="nofollow" target="_blank">
+        </a>
+        <a class="social-link is-b podcast" data-emailid="06953c37-785c-4408-b2cd-4b9f89d3b8f1" href="https://sites.jamanetwork.com/audio/" rel="nofollow" target="_blank">
+        </a>
+        <div id="load-instagram-image">
+        </div>
+       </div>
+       <div class="footer-email-updates" id="BodyContent_Footer_divEmailUpdate">
+        <div class="widget-EmailListSignUp widget-instance-AMAv2_EmailListSignUp_Footer">
+         <div class="email-signup">
+          <div class="email-signup--text sb-pc">
+           Get the latest from JAMA Network
+          </div>
+          <div class="email-signup--input-wrap is-b">
+           <input class="email-signup--input" name="email" placeholder="Email address" title="Email address" type="text"/>
+           <a class="email-signup--submit sb-sc btn" href="javascript:;" rel="nofollow">
+            Sign Up
+           </a>
+          </div>
+          <div class="email-signup--link">
+           <a class="email-signup--privacy" href="/pages/privacy-policy">
+            Privacy Policy
+           </a>
+           |
+           <a class="email-signup--terms" href="/pages/terms-of-use">
+            Terms of Use
+           </a>
+          </div>
+          <div class="email-signup--user-message">
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="footer-bar" itemscope="" itemtype="https://schema.org/Organization">
+       <input class="SelfServeContentId" type="hidden" value="v2_Footer_Bottom_Bar"/>
+       <input class="SelfServeVersionId" type="hidden" value="0"/>
+       <style type="text/css">
+        .nav-journals a.theme-jama-health-forum:before {background: #133763;}
+    .jn-bottom-bar {color: #fff; float: left;font-size: 10px;padding: 13px 20px;width: 33.33%;}
+    .jn-bottom-bar p {line-height: 2;}
+    @media (max-width: 900px) {.jn-bottom-bar {float: none;width: 100%;}}
+    .jn-footer-copyright {font-size:12px;line-height:1.5;margin-bottom:10px;}
+    .jn-footer-pipe {margin:0 10px;}
+    .footer-bar-jn-logo img {width: 230px;}
+    @media (max-width: 900px) {.footer-bar-jn-logo img {width: 200px;}}
+    [data-thm=umb] .jobs-ad--text h6 {color: #d71635 !important;}
+    [data-thm=jama] .jobs-ad--text h6 {color: #d71635 !important;}
+    [data-thm=jaman] .jobs-ad--text h6 {color: #ed0973 !important;}
+    [data-thm=cardi] .jobs-ad--text h6 {color: #be1e32 !important;}
+    [data-thm=derm] .jobs-ad--text h6 {color: #006f3b !important;}
+    [data-thm=faci] .jobs-ad--text h6 {color: #ed1c24 !important;}
+    [data-thm=jama-] .jobs-ad--text h6 {color: #fb5252 !important;}
+    [data-thm=intem] .jobs-ad--text h6 {color: #006e96 !important;}
+    [data-thm=neur] .jobs-ad--text h6 {color: #981b1e !important;}
+    [data-thm=oncol] .jobs-ad--text h6 {color: #3b923f !important;}
+    [data-thm=ophth] .jobs-ad--text h6 {color: #66bc29 !important;}
+    [data-thm=otol] .jobs-ad--text h6 {color: #34b6e4 !important;}
+    [data-thm=peds] .jobs-ad--text h6 {color: #0084c0 !important;}
+    [data-thm=psych] .jobs-ad--text h6 {color: #005276 !important;}
+    [data-thm=surg] .jobs-ad--text h6 {color: #f47920 !important;}
+    .blockquote .para {margin: 0 0 1em 1em;}
+    .jn-footer-copyright {display: block;}
+    .inline-block {display: inline-block;}
+       </style>
+       <a class="footer-bar-jn-logo d-b no-mw mb1" href="/" title="JAMA Network Home">
+        <img alt="Jama Network Logo" class="mw-100" src="https://cdn.jamanetwork.com/ImageLibrary/global/jn-signature-reversed-r.svg?versionId=81136"/>
+       </a>
+       <div class="jn-bottom-bar">
+        <p>
+         <span class="jn-footer-copyright">
+          © 2024 American Medical Association.
+          <span class="inline-block">
+           All rights reserved,
+          </span>
+          including those for text and data mining, AI training,
+          <span class="inline-block">
+           and similar technologies.
+          </span>
+         </span>
+         <span class="inline-block">
+          <a class="p0" href="https://www.ama-assn.org/about/terms-use" rel="nofollow">
+           Terms of Use
+          </a>
+          <span class="jn-footer-pipe">
+           |
+          </span>
+         </span>
+         <span class="inline-block">
+          <a class="p0" href="https://www.ama-assn.org/about/privacy-policy" rel="nofollow">
+           Privacy Policy
+          </a>
+          <span class="jn-footer-pipe">
+           |
+          </span>
+         </span>
+         <span class="inline-block">
+          <a class="p0" href="https://www.ama-assn.org/about/accessibility-statement" rel="nofollow">
+           Accessibility Statement
+          </a>
+          <span class="jn-footer-pipe">
+           |
+          </span>
+         </span>
+         <span class="inline-block">
+          <a class="p0" id="CookieFooter" onclick="OneTrust.ToggleInfoDisplay()" rel="nofollow">
+           Cookie Settings
+          </a>
+         </span>
+        </p>
+       </div>
+       <!-- 
+	#selfserve-maintenance {display:block;margin:20px 0;max-height:none !important;min-height:200px;visibility:visible;}
+	-->
+       <a class="footer-bar-sis no-mw relative nudge-down" href="https://www.silverchair.com" target="_blank">
+        <img alt="Silverchair Logo" class="footer-bar-sis-img mt05 mw-100" height="70" src="//cdn.jamanetwork.com/UI/app/img/powered.png" width="600"/>
+       </a>
+      </div>
+     </footer>
+    </div>
+    <div class="ss-ui-only">
+     <div class="widget-SelfServeContent widget-instance-AMA_SS_UI_Only">
+      <div class="self-serve">
+       <input class="SelfServeContentId" type="hidden" value="SsUiOnly"/>
+       <input class="SelfServeVersionId" type="hidden" value="0"/>
+       .
+      </div>
+     </div>
+    </div>
+   </section>
+   <div class="widget-UserContentAccessWrite widget-instance-AMA_UserContentAccessWrite_Site">
+    <div class="SCM-SharedWidgets-LocalStorage-UserContentAccessWrite" data-values='{"id":"0","type":"Site","date":"4/24/2024 6:37:06 AM"}'>
+    </div>
+   </div>
+   <div class="reveal-modal" data-reveal="" id="revealModal">
+    <div id="revealContent">
+    </div>
+    <a class="close-reveal-modal icon-close">
+    </a>
+   </div>
+   <div class="artmet-modal" id="MetricsModal">
+    <div class="artmet-modal-contents">
+     <a class="artmet-close-modal">
+      ×
+     </a>
+    </div>
+   </div>
+   <div class="reveal-modal medium modal" data-reveal="" id="view-edit-search-modal">
+    <h4 class="fw-b" label="My Saved Searches" name="My Saved Searches" role="group" value="My Saved Searches">
+     My Saved Searches
+    </h4>
+    <div class="saved-searches-no-result">
+     <p>
+      You currently have no searches saved.
+     </p>
+    </div>
+    <a class="close-reveal-modal icon-close">
+    </a>
+   </div>
+   <div class="widget-SigninModals widget-instance-AMA_SigninModals">
+    <div class="js-modal-no-access-reveal no-access reveal-modal modal tiny" data-reveal="">
+     <div class="modal--box">
+      <div class="modal--title">
+       Access your subscriptions
+      </div>
+      <hr/>
+      <button class="modal--btn js-btn-signin-personal" data-oauth-signin-url="https://jamanetwork.com/oauthsignin?return_url=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" role="button" type="button">
+       Sign in
+       <span class="fw-normal">
+        | personal account
+       </span>
+      </button>
+      <div class="widget-AmaAdvancedSeamlessAccess widget-instance-AMA_NoAccess_AdvancedSeamlessAccessButton">
+       <div class="seamless-access-button--wrap">
+        <button class="d-flex sa-button align-items-center" role="button" type="button">
+         <div class="sa-button-logo-wrap">
+          <img alt="Seamless Access Logo" class="sa-button-logo" src="//cdn.jamanetwork.com/UI/app/svg/seamless-access.svg">
+          </img>
+         </div>
+         <div class="d-flex justify-content-center align-items-center sa-button-text text-truncate">
+          <div class="sa-button-text-primary text-truncate">
+           Access through your institution
+          </div>
+         </div>
+        </button>
+        <div class="sa-access-text text-truncate hide">
+         <div class="sa-cta-access">
+          <span>
+           Add or change institution
+          </span>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="widget-SelfServeContent widget-instance-AMA_NoAccess_SigninModal_CreateAccount">
+       <div class="self-serve">
+        <input class="SelfServeContentId" type="hidden" value="SigninModal_CreateAccount"/>
+        <input class="SelfServeVersionId" type="hidden" value="0"/>
+        <div class="modal--title">
+         Free access to newly published articles
+        </div>
+        <hr/>
+        <button class="modal--btn js-btn-create-personal-account" role="button" type="button">
+         <div class="text-truncate">
+          Create a free personal account
+         </div>
+        </button>
+        <div class="modal--btn-desc">
+         To register for email alerts with links to free full-text articles
+        </div>
+        <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_CreateAccount</div>-->
+       </div>
+      </div>
+      <div class="widget-SelfServeContent widget-instance-AMA_NoAccess_SigninModal_PurchaseOptions_NoAccessAndPaidPDF">
+       <div class="self-serve">
+        <input class="SelfServeContentId" type="hidden" value="SigninModal_PurchaseOptions_NoAccessAndPaidPDF"/>
+        <input class="SelfServeVersionId" type="hidden" value="0"/>
+        <div class="modal--title">
+         Purchase access
+        </div>
+        <hr/>
+        <button class="modal--btn js-btn-subscribe-journal" role="button" type="button">
+         <div class="text-truncate">
+          Subscribe to journal
+         </div>
+        </button>
+        <div class="modal--btn-desc">
+         Get full journal access for 1 year
+        </div>
+        <button class="modal--btn js-btn-purchase-article" role="button" type="button">
+         <div class="text-truncate">
+          Buy article
+         </div>
+        </button>
+        <div class="modal--btn-desc">
+         Get unlimited access and a printable PDF ($40.00)—
+         <br/>
+         <em>
+          Sign in or create a free account
+         </em>
+        </div>
+        <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_PurchaseOptions_NoAccessAndPaidPDF</div>-->
+       </div>
+      </div>
+     </div>
+     <a class="close-reveal-modal icon-close">
+     </a>
+    </div>
+    <div class="js-modal-paid-pdf-reveal no-access reveal-modal modal tiny" data-reveal="">
+     <div class="modal--box">
+      <div class="modal--title">
+       Access your subscriptions
+      </div>
+      <hr>
+       <button class="modal--btn js-btn-signin-personal" data-oauth-signin-url="https://jamanetwork.com/oauthsignin?return_url=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" role="button" type="button">
+        Sign in
+        <span class="fw-normal">
+         | personal account
+        </span>
+       </button>
+       <div class="widget-AmaAdvancedSeamlessAccess widget-instance-AMA_PaidPdf_AdvancedSeamlessAccessButton">
+        <div class="seamless-access-button--wrap">
+         <button class="d-flex sa-button align-items-center" role="button" type="button">
+          <div class="sa-button-logo-wrap">
+           <img alt="Seamless Access Logo" class="sa-button-logo" src="//cdn.jamanetwork.com/UI/app/svg/seamless-access.svg"/>
+          </div>
+          <div class="d-flex justify-content-center align-items-center sa-button-text text-truncate">
+           <div class="sa-button-text-primary text-truncate">
+            Access through your institution
+           </div>
+          </div>
+         </button>
+         <div class="sa-access-text text-truncate hide">
+          <div class="sa-cta-access">
+           <span>
+            Add or change institution
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="widget-SelfServeContent widget-instance-AMA_PaidPdf_SigninModal_CreateAccount">
+        <div class="self-serve">
+         <input class="SelfServeContentId" type="hidden" value="SigninModal_CreateAccount"/>
+         <input class="SelfServeVersionId" type="hidden" value="0"/>
+         <div class="modal--title">
+          Free access to newly published articles
+         </div>
+         <hr/>
+         <button class="modal--btn js-btn-create-personal-account" role="button" type="button">
+          <div class="text-truncate">
+           Create a free personal account
+          </div>
+         </button>
+         <div class="modal--btn-desc">
+          To register for email alerts with links to free full-text articles
+         </div>
+         <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_CreateAccount</div>-->
+        </div>
+       </div>
+       <div class="widget-SelfServeContent widget-instance-AMA_PaidPdf_SigninModal_PurchaseOptions_NoAccessAndPaidPDF">
+        <div class="self-serve">
+         <input class="SelfServeContentId" type="hidden" value="SigninModal_PurchaseOptions_NoAccessAndPaidPDF"/>
+         <input class="SelfServeVersionId" type="hidden" value="0"/>
+         <div class="modal--title">
+          Purchase access
+         </div>
+         <hr/>
+         <button class="modal--btn js-btn-subscribe-journal" role="button" type="button">
+          <div class="text-truncate">
+           Subscribe to journal
+          </div>
+         </button>
+         <div class="modal--btn-desc">
+          Get full journal access for 1 year
+         </div>
+         <button class="modal--btn js-btn-purchase-article" role="button" type="button">
+          <div class="text-truncate">
+           Buy article
+          </div>
+         </button>
+         <div class="modal--btn-desc">
+          Get unlimited access and a printable PDF ($40.00)—
+          <br/>
+          <em>
+           Sign in or create a free account
+          </em>
+         </div>
+         <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_PurchaseOptions_NoAccessAndPaidPDF</div>-->
+        </div>
+       </div>
+      </hr>
+     </div>
+     <a class="close-reveal-modal icon-close">
+     </a>
+    </div>
+    <div class="js-modal-free-pdf-reveal no-access reveal-modal modal tiny" data-reveal="">
+     <div class="modal--box">
+      <div class="modal--title">
+       Sign in to access free PDF
+      </div>
+      <hr>
+       <button class="modal--btn js-btn-signin-personal" data-oauth-signin-url="https://jamanetwork.com/oauthsignin?return_url=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" role="button" type="button">
+        Sign in
+        <span class="fw-normal">
+         | personal account
+        </span>
+       </button>
+       <div class="widget-AmaAdvancedSeamlessAccess widget-instance-AMA_FreePdf_AdvancedSeamlessAccessButton">
+        <div class="seamless-access-button--wrap">
+         <button class="d-flex sa-button align-items-center" role="button" type="button">
+          <div class="sa-button-logo-wrap">
+           <img alt="Seamless Access Logo" class="sa-button-logo" src="//cdn.jamanetwork.com/UI/app/svg/seamless-access.svg"/>
+          </div>
+          <div class="d-flex justify-content-center align-items-center sa-button-text text-truncate">
+           <div class="sa-button-text-primary text-truncate">
+            Access through your institution
+           </div>
+          </div>
+         </button>
+         <div class="sa-access-text text-truncate hide">
+          <div class="sa-cta-access">
+           <span>
+            Add or change institution
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="widget-SelfServeContent widget-instance-AMA_FreePdf_SigninModal_CreateAccount">
+        <div class="self-serve">
+         <input class="SelfServeContentId" type="hidden" value="SigninModal_CreateAccount"/>
+         <input class="SelfServeVersionId" type="hidden" value="0"/>
+         <div class="modal--title">
+          Free access to newly published articles
+         </div>
+         <hr/>
+         <button class="modal--btn js-btn-create-personal-account" role="button" type="button">
+          <div class="text-truncate">
+           Create a free personal account
+          </div>
+         </button>
+         <div class="modal--btn-desc">
+          To register for email alerts with links to free full-text articles
+         </div>
+         <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_CreateAccount</div>-->
+        </div>
+       </div>
+      </hr>
+     </div>
+     <a class="close-reveal-modal icon-close">
+     </a>
+    </div>
+    <div class="js-modal-save-search-reveal no-access reveal-modal modal tiny" data-reveal="">
+     <div class="modal--box">
+      <div class="modal--title">
+       Save your search
+      </div>
+      <hr/>
+      <button class="modal--btn js-btn-signin-personal" data-oauth-signin-url="https://jamanetwork.com/oauthsignin?return_url=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" role="button" type="button">
+       Sign in
+       <span class="fw-normal">
+        | personal account
+       </span>
+      </button>
+      <div class="widget-SelfServeContent widget-instance-AMA_SaveSearch_SigninModal_CreateAccount">
+       <div class="self-serve">
+        <input class="SelfServeContentId" type="hidden" value="SigninModal_CreateAccount"/>
+        <input class="SelfServeVersionId" type="hidden" value="0"/>
+        <div class="modal--title">
+         Free access to newly published articles
+        </div>
+        <hr/>
+        <button class="modal--btn js-btn-create-personal-account" role="button" type="button">
+         <div class="text-truncate">
+          Create a free personal account
+         </div>
+        </button>
+        <div class="modal--btn-desc">
+         To register for email alerts with links to free full-text articles
+        </div>
+        <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_CreateAccount</div>-->
+       </div>
+      </div>
+      <div class="widget-SelfServeContent widget-instance-AMA_SigninModal_PurchaseOptions_SaveSearch">
+       <div class="self-serve">
+        <input class="SelfServeContentId" type="hidden" value="SigninModal_PurchaseOptions_SaveSearch"/>
+        <input class="SelfServeVersionId" type="hidden" value="0"/>
+        <div class="modal--title">
+         Purchase access
+        </div>
+        <hr/>
+        <button class="modal--btn js-btn-subscribe-now">
+         Subscribe now
+        </button>
+        <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_PurchaseOptions_SaveSearch</div>-->
+       </div>
+      </div>
+     </div>
+     <a class="close-reveal-modal icon-close">
+     </a>
+    </div>
+    <div class="js-modal-follow-collection-reveal no-access reveal-modal modal tiny" data-reveal="">
+     <div class="modal--box">
+      <div class="modal--title">
+       Customize your interests
+      </div>
+      <hr/>
+      <button class="modal--btn js-btn-signin-personal" data-oauth-signin-url="https://jamanetwork.com/oauthsignin?return_url=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" role="button" type="button">
+       Sign in
+       <span class="fw-normal">
+        | personal account
+       </span>
+      </button>
+      <div class="widget-SelfServeContent widget-instance-AMA_FollowCollection_SigninModal_CreateAccount">
+       <div class="self-serve">
+        <input class="SelfServeContentId" type="hidden" value="SigninModal_CreateAccount"/>
+        <input class="SelfServeVersionId" type="hidden" value="0"/>
+        <div class="modal--title">
+         Free access to newly published articles
+        </div>
+        <hr/>
+        <button class="modal--btn js-btn-create-personal-account" role="button" type="button">
+         <div class="text-truncate">
+          Create a free personal account
+         </div>
+        </button>
+        <div class="modal--btn-desc">
+         To register for email alerts with links to free full-text articles
+        </div>
+        <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_CreateAccount</div>-->
+       </div>
+      </div>
+      <div class="widget-SelfServeContent widget-instance-AMA_SigninModal_PurchaseOptions_FollowCollection">
+       <div class="self-serve">
+        <input class="SelfServeContentId" type="hidden" value="SigninModal_PurchaseOptions_FollowCollection"/>
+        <input class="SelfServeVersionId" type="hidden" value="0"/>
+        <div class="modal--sub-title">
+         Create a personal account or sign in to:
+        </div>
+        <ul>
+         <li>
+          Register for email alerts with links to free full-text articles
+         </li>
+         <li>
+          Access PDFs of free articles
+         </li>
+         <li>
+          Manage your interests
+         </li>
+         <li>
+          Save searches and receive search alerts
+         </li>
+         <ul>
+          <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_PurchaseOptions_FollowCollection</div>-->
+         </ul>
+        </ul>
+       </div>
+      </div>
+      <div class="modal--link-wrap">
+       <a class="modal--link" href="/pages/privacy-policy" rel="nofollow">
+        Privacy Policy
+       </a>
+      </div>
+     </div>
+     <a class="close-reveal-modal icon-close">
+     </a>
+    </div>
+    <div class="js-modal-user-comment-reveal no-access reveal-modal modal tiny" data-reveal="">
+     <div class="modal--box">
+      <div class="modal--title">
+       Make a comment
+      </div>
+      <hr/>
+      <button class="modal--btn js-btn-signin-personal" data-oauth-signin-url="https://jamanetwork.com/oauthsignin?return_url=https%3a%2f%2fjamanetwork.com%2fsearchresults%3fq%3dclinical%26f_ArticleTypeDisplayName%3dResearch%26exPrm_qqq%3d%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22%26exPrm_hl.q%3dclinical%26page%3d1%26f_OpenAccessFilter%3dtrue" role="button" type="button">
+       Sign in
+       <span class="fw-normal">
+        | personal account
+       </span>
+      </button>
+      <div class="widget-SelfServeContent widget-instance-AMA_UserComment_SigninModal_CreateAccount">
+       <div class="self-serve">
+        <input class="SelfServeContentId" type="hidden" value="SigninModal_CreateAccount"/>
+        <input class="SelfServeVersionId" type="hidden" value="0"/>
+        <div class="modal--title">
+         Free access to newly published articles
+        </div>
+        <hr/>
+        <button class="modal--btn js-btn-create-personal-account" role="button" type="button">
+         <div class="text-truncate">
+          Create a free personal account
+         </div>
+        </button>
+        <div class="modal--btn-desc">
+         To register for email alerts with links to free full-text articles
+        </div>
+        <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_CreateAccount</div>-->
+       </div>
+      </div>
+      <div class="widget-SelfServeContent widget-instance-AMA_SigninModal_PurchaseOptions_UserComment">
+       <div class="self-serve">
+        <input class="SelfServeContentId" type="hidden" value="SigninModal_PurchaseOptions_UserComment"/>
+        <input class="SelfServeVersionId" type="hidden" value="0"/>
+        <div class="modal--sub-title">
+         Create a personal account or sign in to:
+        </div>
+        <ul>
+         <li>
+          Register for email alerts with links to free full-text articles
+         </li>
+         <li>
+          Access PDFs of free articles
+         </li>
+         <li>
+          Manage your interests
+         </li>
+         <li>
+          Save searches and receive search alerts
+         </li>
+         <ul>
+          <!--<div class="jn-selfServe-modal-label">JAMA Network|SigninModal_PurchaseOptions_UserComment</div>-->
+         </ul>
+        </ul>
+       </div>
+      </div>
+      <div class="modal--link-wrap">
+       <a class="modal--link" href="/pages/privacy-policy" rel="nofollow">
+        Privacy Policy
+       </a>
+      </div>
+     </div>
+     <a class="close-reveal-modal icon-close">
+     </a>
+    </div>
+    <div class="hidden-true js-modal-page-data" data-store-purchase-url="https://jamanetwork.com/oauthsignin?return_url=https://store.jamanetwork.com" data-store-subscribe-url="https://store.jamanetwork.com" data-store-url="https://store.jamanetwork.com">
+    </div>
+   </div>
+   <script src="//cdn.jamanetwork.com/UI/app/vendor/jquery-2.2.4.min.js?v=638473295270790799">
+   </script>
+   <script>
+    window.jQuery || document.write('<script src="/UI/app/vendor/jquery-2.2.4.min.js">\x3C/script>')
+   </script>
+   <script src="//cdn.jamanetwork.com/UI/app/dist/app.min.js?v=638488852374030681">
+   </script>
+   <script src="//cdn.jamanetwork.com/UI/app/dist/search.min.js?v=638488852269038379">
+   </script>
+  </form>
+  <link href="//cdn.jamanetwork.com/UI/app/scss/modules/_trendMD.css" rel="stylesheet"/>
+ </body>
+</html>
