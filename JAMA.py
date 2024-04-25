@@ -3,6 +3,11 @@ import random
 import requests
 from bs4 import BeautifulSoup
 
+
+headers = {
+    'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36'
+}
+
 flag = True
 while flag:
 
@@ -26,13 +31,23 @@ while flag:
 
     pdfs = []
     for i in range(len(title_h3_tags)):
-        pdfs.append({'title': title_h3_tags[i].text, 'link': base_url + link_a_tags[i].get('data-article-url')})
-
+        pdfs.append({'title': title_h3_tags[i].text.strip().replace('\n', ' '), 'link': base_url + link_a_tags[i].get('data-article-url')})
     for pdf in pdfs:
-        with open(f'./data/{pdf["title"]}.pdf', 'wb') as file:
-            response = requests.get(pdf['link'], headers={'User-Agent': 'Mozilla/5.0'})
-            file.write(response.content)
-            print(f'{pdf["title"]} downloaded')
+        response = requests.get(pdf['link'], headers=headers, stream=True, allow_redirects=True)
+        if(response.status_code != 200):
+            print('Error:', response.status_code)
+        else:
+            with open(f'./data/{pdf["title"]}.pdf', 'wb') as file:
+                print(f'Downloading {pdf["title"]}')
+                file.write(response.content)
+            # with open(f'./data/{pdf["title"]}.txt', 'a') as file:
+            #     file.write(str(response.text))
+            print(type(response.content))
+            print(str(response.content)[:1000])
+            print('='*150)
+            print(str(response.content)[-1000:])
+            print(f'{pdf["title"]} downloaded\n')
+
             time.sleep(random.randint(1, 3))
 
     page += 1
