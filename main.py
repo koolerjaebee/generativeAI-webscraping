@@ -45,7 +45,7 @@ while flag:
         link_a_tags = soup.find_all('a', {'class': re.compile(fr'{A_TAG_CLASS}.*')})
 
         links = []
-        for i in range(19):
+        for i in range(len(link_a_tags)-1):
             links.append(base_url + link_a_tags[i].get(DOWNLOAD_URL))
         for link in links:
             response = requests.get(link, headers=headers, stream=True, allow_redirects=True)
