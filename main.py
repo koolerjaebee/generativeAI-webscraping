@@ -24,7 +24,8 @@ start_time = time.strftime('%Y%m%d_%H%M')
 log_format = "%(asctime)s - %(filename)s:%(lineno)d - %(levelname)s - %(message)s"
 
 # 로그 설정을 초기화합니다.
-logging.basicConfig(filename="app.log", level=logging.DEBUG, format=log_format)
+logging.basicConfig(
+    filename=f"[{SCRAPPING_TITLE}]app.log", level=logging.DEBUG, format=log_format)
 
 
 headers = {
