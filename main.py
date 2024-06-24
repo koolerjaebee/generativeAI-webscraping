@@ -58,6 +58,12 @@ while flag:
         links = []
         for i in range(len(link_a_tags)-1):
             links.append(base_url + link_a_tags[i].get(DOWNLOAD_URL))
+        if len(links) == 0:
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL +
+                  ' No links found in the page')
+            logging.error('No links found in the page')
+            flag = False
+            break
         for link in links:
             response = requests.get(
                 link, headers=headers, stream=True, allow_redirects=True)
