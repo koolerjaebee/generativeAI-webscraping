@@ -180,11 +180,10 @@ def webscraping_using_selenium():
                 for tab in tabs[1:]:
                     driver.switch_to.window(tab)
 
-                    tab_actions = ActionChains(driver)
-                    tab_actions.key_down(Keys.CONTROL).send_keys(
-                        's').key_up(Keys.CONTROL).perform()
+                    actions.key_down(Keys.CONTROL).send_keys(
+                        "S").key_up(Keys.CONTROL)
                     time.sleep(2)
-                    tab_actions.send_keys(Keys.ENTER).perform()
+                    actions.send_keys(Keys.ENTER).perform()
 
                     driver.close()
                 driver.switch_to.window(tabs[0])
