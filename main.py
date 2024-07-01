@@ -9,6 +9,12 @@ import re
 from dotenv import load_dotenv
 from tqdm import tqdm
 from colorama import Fore, Style
+import cloudscraper
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium_app import driver, actions
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium_stealth import stealth
 
 
 load_dotenv()
@@ -17,6 +23,9 @@ SCRAPPING_BASE_URL = os.getenv("SCRAPPING_BASE_URL")
 STARTING_PAGE = os.getenv("STARTING_PAGE")
 A_TAG_CLASS = os.getenv("A_TAG_CLASS")
 DOWNLOAD_URL = os.getenv("DOWNLOAD_URL")
+SCRAPPING_PRE_PAGE_PARAM = os.getenv("SCRAPPING_PRE_PAGE_PARAM")
+SCRAPPING_POST_PAGE_PARAM = os.getenv("SCRAPPING_POST_PAGE_PARAM")
+IS_CLOUDFLARE = os.getenv("IS_CLOUDFLARE")
 
 
 start_time = time.strftime('%Y%m%d_%H%M')
@@ -28,76 +37,176 @@ logging.basicConfig(
     filename=f"[{SCRAPPING_TITLE}]app.log", level=logging.DEBUG, format=log_format)
 
 
-headers = {
-    'user-agent': 'Mozilla/5.0 (Linux; Android 8.0.0; SM-G955U Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Mobile Safari/537.36'
-}
-flag = True
-page = int(STARTING_PAGE)
+def webscraping_using_requests():
+    headers = {
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+    }
+    flag = True
+    page = int(STARTING_PAGE)
 
+    while flag:
+        try:
+            print(Fore.BLUE + Style.BRIGHT + 'INFO:' +
+                  Style.RESET_ALL + f' page {page}')
+            logging.info(f'page {page}')
+            base_url = SCRAPPING_BASE_URL
+            url = base_url + SCRAPPING_PRE_PAGE_PARAM + \
+                str(page) + SCRAPPING_POST_PAGE_PARAM
 
-while flag:
-    try:
-        print(Fore.BLUE + Style.BRIGHT + 'INFO:' +
-              Style.RESET_ALL + f' page {page}')
-        logging.info(f'page {page}')
-        base_url = SCRAPPING_BASE_URL
-        url = base_url + \
-            f'/searchresults?q=clinical&f_ArticleTypeDisplayName=Research&exPrm_qqq=%7bDEFAULT_BOOST_FUNCTION%7d%22clinical%22&exPrm_hl.q=clinical&page={page}&f_OpenAccessFilter=true'
-        response = requests.get(url, headers={'User-Agent': 'Mozilla/5.0'})
+            session = requests.Session()
+            session.headers.update({
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+                'Accept': 'text/html, */*; q=0.01',
+                'Accept-Language': 'en-US,en;q=0.5',
+                'Referer': 'https://www.thelancet.com/action/doSearch?',
+                'X-Requested-With': 'XMLHttpRequest',
+                'Origin': 'https://www.thelancet.com',
+                'Connection': 'keep-alive',
+            })
+            if IS_CLOUDFLARE == 'True':
+                scraper = cloudscraper.create_scraper(
+                    debug=True, browser={'browser': 'firefox', 'platform': 'windows', 'mobile': False})
+                response = scraper.get(url)
+                print(response.content)
+            else:
+                response = session.get(url)
+                print(response.text)
 
-        soup = BeautifulSoup(response.text, 'html.parser')
-        if response.status_code != 200:
-            print(Fore.RED + 'ERROR:' + Style.RESET_ALL, response.status_code)
-            logging.error(f'{response.status_code}')
-            flag = False
-            break
-
-        link_a_tags = soup.find_all(
-            'a', {'class': re.compile(fr'{A_TAG_CLASS}.*')})
-
-        links = []
-        for i in range(len(link_a_tags)-1):
-            links.append(base_url + link_a_tags[i].get(DOWNLOAD_URL))
-        if len(links) == 0:
-            print(Fore.RED + 'ERROR:' + Style.RESET_ALL +
-                  ' No links found in the page')
-            logging.error('No links found in the page')
-            flag = False
-            break
-        for link in links:
-            response = requests.get(
-                link, headers=headers, stream=True, allow_redirects=True)
-            if (response.status_code != 200):
+            soup = BeautifulSoup(response.text, 'html.parser')
+            if response.status_code != 200:
                 print(Fore.RED + 'ERROR:' + Style.RESET_ALL, response.status_code)
                 logging.error(f'{response.status_code}')
-            else:
-                title = link.split('/')[-1].split('?')[0]
-                with open(f'./data/{title}', 'wb') as file:
-                    print(Fore.GREEN + 'INFO:' + Style.RESET_ALL +
-                          f' Downloading {title}')
-                    logging.info(f'Downloading {title}')
-                    for data in tqdm(iterable=response.iter_content(chunk_size=1024), total=int(response.headers.get('content-length', 0))//1024, unit='KB'):
-                        file.write(data)
-                    print(Fore.GREEN + 'INFO:' + Style.RESET_ALL +
-                          f' Download Complete {title}')
-                    logging.info(f'Download Complete {title}')
+                flag = False
+                break
+
+            link_a_tags = soup.find_all(
+                'a', {'class': re.compile(fr'{A_TAG_CLASS}.*')})
+
+            links = []
+            for i in range(len(link_a_tags)-1):
+                links.append(base_url + link_a_tags[i].get(DOWNLOAD_URL))
+            if len(links) == 0:
+                print(Fore.RED + 'ERROR:' + Style.RESET_ALL +
+                      ' No links found in the page')
+                logging.error('No links found in the page')
+                flag = False
+                break
+            for link in links:
+                response = requests.get(
+                    link, headers=headers, stream=True, allow_redirects=True)
+                if (response.status_code != 200):
+                    print(Fore.RED + 'ERROR:' +
+                          Style.RESET_ALL, response.status_code)
+                    logging.error(f'{response.status_code}')
+                else:
+                    title = link.split('/')[-1].split('?')[0]
+                    with open(f'./data/{title}', 'wb') as file:
+                        print(Fore.GREEN + 'INFO:' + Style.RESET_ALL +
+                              f' Downloading {title}')
+                        logging.info(f'Downloading {title}')
+                        for data in tqdm(iterable=response.iter_content(chunk_size=1024), total=int(response.headers.get('content-length', 0))//1024, unit='KB'):
+                            file.write(data)
+                        print(Fore.GREEN + 'INFO:' + Style.RESET_ALL +
+                              f' Download Complete {title}')
+                        logging.info(f'Download Complete {title}')
+                    time.sleep(random.randint(1, 10)/10)
+        except Exception as e:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            fname = os.path.split(exc_traceback.tb_frame.f_code.co_filename)[1]
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL, e)
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL + ' Filename ', fname)
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL + ' Type ', exc_type)
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL +
+                  ' Line_number ', exc_traceback.tb_lineno)
+            logging.error(f'{e}')
+            logging.error(f'\tFilename {fname}')
+            logging.error(f'\tType {exc_type}')
+            logging.error(f'\tLine_number {exc_traceback.tb_lineno}')
+            flag = False
+            print(Style.RESET_ALL)
+            break
+
+        page += 1
+
+
+def webscraping_using_selenium():
+    flag = True
+    page = int(STARTING_PAGE)
+    stealth(driver,
+            languages=["en-US", "en"],
+            vendor="Google Inc.",
+            platform="Win32",
+            webgl_vendor="Intel Inc.",
+            renderer="Intel Iris OpenGL Engine",
+            fix_hairline=True,
+            )
+
+    while flag:
+        try:
+            print(Fore.BLUE + Style.BRIGHT + 'INFO:' +
+                  Style.RESET_ALL + f' page {page}')
+            logging.info(f'page {page}')
+            base_url = SCRAPPING_BASE_URL
+            url = base_url + SCRAPPING_PRE_PAGE_PARAM + \
+                str(page) + SCRAPPING_POST_PAGE_PARAM
+
+            driver.get(url)
+            time.sleep(5)
+            try:
+                cookie_modal_button = driver.find_element(
+                    By.ID, 'onetrust-accept-btn-handler')
+                cookie_modal_button.click()
+                time.sleep(2)
+            except:
+                print('No cookie modal found')
+
+            links = driver.find_elements(By.CLASS_NAME, A_TAG_CLASS)
+            if len(links) == 0:
+                print(Fore.RED + 'ERROR:' + Style.RESET_ALL +
+                      ' No links found in the page')
+                logging.error('No links found in the page')
+                flag = False
+                break
+            for link in links:
+                print(link.get_attribute('href'))
+                actions.context_click(link).perform()
+                actions.send_keys(Keys.ARROW_DOWN).send_keys(
+                    Keys.ARROW_DOWN).send_keys(Keys.ARROW_DOWN).send_keys(Keys.ENTER).perform()
+                time.sleep(2)
                 time.sleep(random.randint(1, 10)/10)
-    except Exception as e:
-        exc_type, exc_value, exc_traceback = sys.exc_info()
-        fname = os.path.split(exc_traceback.tb_frame.f_code.co_filename)[1]
-        print(Fore.RED + 'ERROR:' + Style.RESET_ALL, e)
-        print(Fore.RED + 'ERROR:' + Style.RESET_ALL + ' Filename ', fname)
-        print(Fore.RED + 'ERROR:' + Style.RESET_ALL + ' Type ', exc_type)
-        print(Fore.RED + 'ERROR:' + Style.RESET_ALL +
-              ' Line_number ', exc_traceback.tb_lineno)
-        logging.error(f'{e}')
-        logging.error(f'\tFilename {fname}')
-        logging.error(f'\tType {exc_type}')
-        logging.error(f'\tLine_number {exc_traceback.tb_lineno}')
-        flag = False
-        print(Style.RESET_ALL)
-        break
+            else:
+                input('Press Enter to continue...')
+                tabs = driver.window_handles
+                for tab in tabs[1:]:
+                    driver.switch_to.window(tab)
 
-    page += 1
+                    tab_actions = ActionChains(driver)
+                    tab_actions.key_down(Keys.CONTROL).send_keys(
+                        's').key_up(Keys.CONTROL).perform()
+                    time.sleep(2)
+                    tab_actions.send_keys(Keys.ENTER).perform()
 
-# testing testing
+                    driver.close()
+                driver.switch_to.window(tabs[0])
+
+        except Exception as e:
+            exc_type, exc_value, exc_traceback = sys.exc_info()
+            fname = os.path.split(exc_traceback.tb_frame.f_code.co_filename)[1]
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL, e)
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL + ' Filename ', fname)
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL + ' Type ', exc_type)
+            print(Fore.RED + 'ERROR:' + Style.RESET_ALL +
+                  ' Line_number ', exc_traceback.tb_lineno)
+            logging.error(f'{e}')
+            logging.error(f'\tFilename {fname}')
+            logging.error(f'\tType {exc_type}')
+            logging.error(f'\tLine_number {exc_traceback.tb_lineno}')
+            flag = False
+            print(Style.RESET_ALL)
+            break
+        page += 1
+
+
+if __name__ == "__main__":
+    # webscraping_using_requests()
+    webscraping_using_selenium()
