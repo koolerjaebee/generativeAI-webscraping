@@ -1,5 +1,6 @@
 import sys
 import os
+import argparse
 import time
 import random
 import requests
@@ -9,7 +10,7 @@ import re
 from dotenv import load_dotenv
 from tqdm import tqdm
 from colorama import Fore, Style
-from selenium_app import driver, actions
+from app.selenium import driver, actions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium_stealth import stealth
@@ -201,5 +202,13 @@ def webscraping_using_selenium():
 
 
 if __name__ == "__main__":
-    # webscraping_using_requests()
-    webscraping_using_selenium()
+    parser = argparse.ArgumentParser()
+
+    parser.add_argument('--selenium', action='store_true')
+
+    args = parser.parse_args()
+
+    if args.selenium:
+        webscraping_using_selenium()
+    else:
+        webscraping_using_requests()

@@ -4,6 +4,9 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.action_chains import ActionChains
 import undetected_chromedriver as uc
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium_stealth import stealth
 
 
 load_dotenv()
@@ -42,3 +45,7 @@ params = {
     "downloadPath": download_dir
 }
 driver.execute_cdp_cmd("Page.setDownloadBehavior", params)
+
+By = By
+Keys = Keys
+stealth = stealth
