@@ -22,6 +22,13 @@ if not os.path.exists(download_dir):
 # })
 options = uc.ChromeOptions()
 options.headless = False
+prefs = {
+    "plugins.plugins_disabled": ["Chrome PDF Viewer"],
+    "plugins.always_open_pdf_externally": True,
+    "download.default_directory": "C:\\Users\\Downloads\\test\\"
+}
+options.add_experimental_option("prefs", prefs)
+options.add_argument("--remote-allow-origins=*")
 
 
 service = Service(executable_path=DRIVER_PATH)

@@ -9,8 +9,6 @@ import re
 from dotenv import load_dotenv
 from tqdm import tqdm
 from colorama import Fore, Style
-import cloudscraper
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium_app import driver, actions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -179,12 +177,8 @@ def webscraping_using_selenium():
                 tabs = driver.window_handles
                 for tab in tabs[1:]:
                     driver.switch_to.window(tab)
-
-                    actions.key_down(Keys.CONTROL).send_keys(
-                        "S").key_up(Keys.CONTROL)
+                    driver.refresh()
                     time.sleep(2)
-                    actions.send_keys(Keys.ENTER).perform()
-
                     driver.close()
                 driver.switch_to.window(tabs[0])
 
