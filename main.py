@@ -10,10 +10,7 @@ import re
 from dotenv import load_dotenv
 from tqdm import tqdm
 from colorama import Fore, Style
-from app.selenium import driver, actions
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium_stealth import stealth
+from app.selenium import driver, actions, By, Keys, stealth
 
 
 load_dotenv()
@@ -158,6 +155,13 @@ def webscraping_using_selenium():
                 time.sleep(2)
             except:
                 print('No cookie modal found')
+            try:
+                register_modal_button = driver.find_element(
+                    By.CLASS_NAME, 'featherlight-close-icon featherlight-close')
+                register_modal_button.click()
+                time.sleep(2)
+            except:
+                print('No register modal found')
 
             links = driver.find_elements(By.CLASS_NAME, A_TAG_CLASS)
             if len(links) == 0:
